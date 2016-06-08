@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jVectorMap demo</title>
+  <link rel="stylesheet" href="jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
+  <script src="jquery-1.12.3.min.js"></script>
+  <script src="jquery-jvectormap-2.0.3.min.js"></script>
+  <script src="jquery-jvectormap-world-mill-en.js"></script>
+  <script src="gdp-data.js"></script>
+  <script src="markers.js"></script>
+  <link rel="stylesheet" href="custom-styles.css" media="screen" title="no title" charset="utf-8">
+
+</head>
+<body>
+  <div class="map-container">
+
+    <div id="world-map-gdp"  ></div>
+    <!-- <script>
+    $(function(){
+    $('#world-map').vectorMap({map: 'world_mill'});
+  });
+</script> -->
+<script>
+
+$(function(){
+  var scope ={};
+  scope.bgColor = '#fff';
+  scope.scaleColors = ['#fbf0f1','#cb333b'];
+  scope.fillColor = '#e7e7e9';
+  scope.strokeColor = '#fff';
+  scope.strokeWidth = '0.4';
+  scope.markerColor = 'aqua'
+
+  $('#world-map-gdp').vectorMap({
+    map: 'world_mill_en',
+    backgroundColor: scope.bgColor,
+    zoomOnScroll: false,
+    regionStyle: {
+      initial: {
+        fill: scope.fillColor,
+        stroke: scope.strokeColor,
+        "stroke-width": scope.strokeWidth
+      }
+    },
+    markers: markers,
+    markerStyle: {
+            initial: {
+              fill: scope.markerColor,
+              stroke: scope.strokeColor
+            }
+          },
+    series: {
+      regions: [{
+        values: gdpData,
+        scale: scope.scaleColors,
+        normalizeFunction: 'polynomial'
+      }]
+      // markers: [{
+      //   attribute: fill,
+      //
+      // }]
+    },
+    onRegionTipShow: function(e, label, index){
+      label.html(label.html()+'<br> (GDP - '+gdpData[index]+')');
+    },
+    // onMarkerTipShow: function(event, label, code){
+    //   label.html("<p>Name:<br>"+ label.html()+"</p>");
+    // }
+    onMarkerTipShow: function(event, label, index){
+      label.html('<h3>'+label.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'">Where we work >></a>');
+    }
+  });
+});
+</script>
+  </div>
+</body>
+</html>
