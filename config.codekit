@@ -51,6 +51,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/jquery-jvectormap-2.0.3.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/jquery-jvectormap-2.0.3.js",
+		"outputAbbreviatedPath": "\/min\/jquery-jvectormap-2.0.3-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/jquery-jvectormap-2.0.3.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -112,6 +123,28 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/min\/markers-min.js",
 		"outputAbbreviatedPath": "\/min\/min\/markers-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/mortality.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mortality.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/mortality-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/process.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/process.js",
+		"outputAbbreviatedPath": "\/min\/process-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
