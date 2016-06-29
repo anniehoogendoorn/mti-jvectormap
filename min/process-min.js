@@ -1,0 +1,1 @@
+$(document).ready(function(){$.getJSON("mortality.json",function(o){for(var n={},e=0;e<o.length;e++)n[o[e].key]=o[e].value;console.log(n)})});

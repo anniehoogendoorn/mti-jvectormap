@@ -9,6 +9,12 @@
   <script src="jquery-jvectormap-world-mill-en.js"></script>
   <script src="gdp-data.js"></script>
   <script src="markers.js"></script>
+  <!-- <script src="mortality.jsonp"></script> -->
+  <!-- <script src="process.js"></script> -->
+
+  </script>
+
+  </script>
   <link rel="stylesheet" href="custom-styles.css" media="screen" title="no title" charset="utf-8">
 
 </head>
@@ -71,6 +77,56 @@ $(function(){
       label.html('<h3>'+label.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'">Where we work >></a>');
     }
   });
+
+
+  // $.getJSON( "mortality.json", function( data ) {
+  //  for (var i=0; i<data.length; i++) {
+  //    result[data[i].key] = data[i].value;
+  //  }
+  // //  console.log(result);
+  // });
+  //
+  // $.getJSON( "countries.json", function(isoCountries) {
+  //   var countries = isoCountries;
+  //   console.log( countries );
+  // });
+
+  var mortalityData, countryData;
+  $.when(
+    $.getJSON( "mortality.json", function(data) {
+      mortalityData = data;
+    }),
+    $.getJSON("countries.json", function( data) {
+      countryData = data;
+    })
+  ).then(function() {
+    // var result = {};
+    // for (var i=0; i<mortalityData.length; i++) {
+    //   for (var i=0; i<countryData.length; i++) {
+    //     if (mortalityData[i].key == countryData[i].value) {
+    //       result[countryData[i].key] = mortalityData[i].value;
+    //     }
+    //   }
+    // }
+    console.log(countryData);
+
+  });
+
+  // $.getJSON( "mortality.json", function( data ) {
+  //  var result = {};
+  //  for (var i=0; i<data.length; i++) {
+  //    $.getJSON( "countries.json", function( isoCountries ) {
+  //      for (var i=0; i<isoCountries.length; i++) {
+  //        if data[i].key == isoCountries[i].value {
+  //          result[isoCountries[i].key] = data[i].value;
+  //        }
+  //      }
+  //      console.log(result);
+  //    });
+
+
+
+
 });
 </script>
   </div>
