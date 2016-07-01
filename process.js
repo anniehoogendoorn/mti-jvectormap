@@ -10,7 +10,7 @@ var result = {};
       $.getJSON("mortality.json", function(data) {
         mortalityData = data;
       }),
-      $.getJSON("countries.json", function(data) {
+      $.getJSON("country-codes.json", function(data) {
         countryData = data;
       })
     ).done(function() {

@@ -13,6 +13,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
+	"\/country-codes.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/country-codes.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/country-codes-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/custom-styles.css": {
 		"fileType": 16,
 		"ignore": 0,
