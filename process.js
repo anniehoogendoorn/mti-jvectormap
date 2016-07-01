@@ -1,34 +1,35 @@
-$(document).ready(function() {
-//   $.ajax( {
-//     type: "GET",
-//     url: "mortality_data.csv",
-//     dataType: "text",
-//     success: function(mortality_data) {processData(mortality_data);}
-//   });
+var result = {};
 
-// function mortality(json) {
-//   var obj = {};
-  // for (var i=0; i<data.length; i++ ) {
-  //   obj[data[i].key] = data[i].value;
-  //   return obj;
+// $(document).ready(function () {
+
+  // function processMortality() {
+
+    var mortalityData, countryData, mortalityData_key, mortalityData_value;
+
+    $.when(
+      $.getJSON("mortality.json", function(data) {
+        mortalityData = data;
+      }),
+      $.getJSON("countries.json", function(data) {
+        countryData = data;
+      })
+    ).done(function() {
+      // var result = {};
+      for (var i=0; i<mortalityData.length; i++) {
+        mortalityData_key = mortalityData[i].key;
+        mortalityData_value = mortalityData[i].value;
+
+        $.each(countryData, function(key, value) {
+          if (mortalityData_key === value ) {
+            result[key] = mortalityData_value;
+          }
+        });
+      }
+      // return result;
+      // console.log(result);
+    });
   // }
-// }
 
-// $.getJSON( "mortality.json", function( data ) {
-//    var result = {};
-//    for (var i=0; i<data.length; i++) {
-//      result[data[i].key] = data[i].value;
-//    }
-//    console.log(result);
-//
-//  });
-
- $.getJSON( "mortality.json", function( data ) {
-  var result = {};
-  for (var i=0; i<data.length; i++) {
-    result[data[i].key] = data[i].value;
-  }
-  console.log(result);
- });
-
-});// document ready
+// });// document ready
+var gdpData = result;
+console.log(result);
