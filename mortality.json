@@ -1,1035 +1,1035 @@
 [
     {
-        "key": "Abkhazia"
+        "country": "Abkhazia"
     },
     {
-        "key": "Afghanistan",
-        "value": 91.1
+        "country": "Afghanistan",
+        "stat": 91.1
     },
     {
-        "key": "Akrotiri and Dhekelia"
+        "country": "Akrotiri and Dhekelia"
     },
     {
-        "key": "Albania",
-        "value": 14
+        "country": "Albania",
+        "stat": 14
     },
     {
-        "key": "Algeria",
-        "value": 24
+        "country": "Algeria",
+        "stat": 24
     },
     {
-        "key": "American Samoa"
+        "country": "American Samoa"
     },
     {
-        "key": "Andorra",
-        "value": 2.8
+        "country": "Andorra",
+        "stat": 2.8
     },
     {
-        "key": "Angola",
-        "value": 156.9
+        "country": "Angola",
+        "stat": 156.9
     },
     {
-        "key": "Anguilla"
+        "country": "Anguilla"
     },
     {
-        "key": "Antigua and Barbuda",
-        "value": 8.1
+        "country": "Antigua and Barbuda",
+        "stat": 8.1
     },
     {
-        "key": "Argentina",
-        "value": 12.5
+        "country": "Argentina",
+        "stat": 12.5
     },
     {
-        "key": "Armenia",
-        "value": 14.2
+        "country": "Armenia",
+        "stat": 14.2
     },
     {
-        "key": "Aruba",
-        "value": 16.57
+        "country": "Aruba",
+        "stat": 16.57
     },
     {
-        "key": "Australia",
-        "value": 3.5
+        "country": "Australia",
+        "stat": 3.5
     },
     {
-        "key": "Austria",
-        "value": 3.5
+        "country": "Austria",
+        "stat": 3.5
     },
     {
-        "key": "Azerbaijan",
-        "value": 31.7
+        "country": "Azerbaijan",
+        "stat": 31.7
     },
     {
-        "key": "Bahamas",
-        "value": 12.1
+        "country": "Bahamas",
+        "stat": 12.1
     },
     {
-        "key": "Bahrain",
-        "value": 6.2
+        "country": "Bahrain",
+        "stat": 6.2
     },
     {
-        "key": "Bangladesh",
-        "value": 37.6
+        "country": "Bangladesh",
+        "stat": 37.6
     },
     {
-        "key": "Barbados",
-        "value": 13
+        "country": "Barbados",
+        "stat": 13
     },
     {
-        "key": "Belarus",
-        "value": 4.4
+        "country": "Belarus",
+        "stat": 4.4
     },
     {
-        "key": "Belgium",
-        "value": 4.1
+        "country": "Belgium",
+        "stat": 4.1
     },
     {
-        "key": "Belize",
-        "value": 16.5
+        "country": "Belize",
+        "stat": 16.5
     },
     {
-        "key": "Benin",
-        "value": 99.5
+        "country": "Benin",
+        "stat": 99.5
     },
     {
-        "key": "Bermuda"
+        "country": "Bermuda"
     },
     {
-        "key": "Bhutan",
-        "value": 32.9
+        "country": "Bhutan",
+        "stat": 32.9
     },
     {
-        "key": "Bolivia",
-        "value": 38.4
+        "country": "Bolivia",
+        "stat": 38.4
     },
     {
-        "key": "Bosnia and Herzegovina",
-        "value": 6
+        "country": "Bosnia and Herzegovina",
+        "stat": 6
     },
     {
-        "key": "Botswana",
-        "value": 53.3
+        "country": "Botswana",
+        "stat": 53.3
     },
     {
-        "key": "Brazil",
-        "value": 13.3
+        "country": "Brazil",
+        "stat": 13.3
     },
     {
-        "key": "British Virgin Islands"
+        "country": "British Virgin Islands"
     },
     {
-        "key": "Brunei",
-        "value": 10.3
+        "country": "Brunei",
+        "stat": 10.3
     },
     {
-        "key": "Bulgaria",
-        "value": 10.7
+        "country": "Bulgaria",
+        "stat": 10.7
     },
     {
-        "key": "Burkina Faso",
-        "value": 88.6
+        "country": "Burkina Faso",
+        "stat": 88.6
     },
     {
-        "key": "Burundi",
-        "value": 81.7
+        "country": "Burundi",
+        "stat": 81.7
     },
     {
-        "key": "Cambodia",
-        "value": 28.7
+        "country": "Cambodia",
+        "stat": 28.7
     },
     {
-        "key": "Cameroon",
-        "value": 88.7
+        "country": "Cameroon",
+        "stat": 88.7
     },
     {
-        "key": "Canada",
-        "value": 4.9
+        "country": "Canada",
+        "stat": 4.9
     },
     {
-        "key": "Cape Verde",
-        "value": 24.3
+        "country": "Cape Verde",
+        "stat": 24.3
     },
     {
-        "key": "Cayman Islands"
+        "country": "Cayman Islands"
     },
     {
-        "key": "Central African Republic",
-        "value": 130.5
+        "country": "Central African Republic",
+        "stat": 130.5
     },
     {
-        "key": "Chad",
-        "value": 138.7
+        "country": "Chad",
+        "stat": 138.7
     },
     {
-        "key": "Channel Islands",
-        "value": 8.87
+        "country": "Channel Islands",
+        "stat": 8.87
     },
     {
-        "key": "Chile",
-        "value": 8.1
+        "country": "Chile",
+        "stat": 8.1
     },
     {
-        "key": "China",
-        "value": 10.7
+        "country": "China",
+        "stat": 10.7
     },
     {
-        "key": "Christmas Island"
+        "country": "Christmas Island"
     },
     {
-        "key": "Cocos Island"
+        "country": "Cocos Island"
     },
     {
-        "key": "Colombia",
-        "value": 15.9
+        "country": "Colombia",
+        "stat": 15.9
     },
     {
-        "key": "Comoros",
-        "value": 73.5
+        "country": "Comoros",
+        "stat": 73.5
     },
     {
-        "key": "Congo, Dem. Rep.",
-        "value": 98.3
+        "country": "Congo, Dem. Rep.",
+        "stat": 98.3
     },
     {
-        "key": "Congo, Rep.",
-        "value": 45
+        "country": "Congo, Rep.",
+        "stat": 45
     },
     {
-        "key": "Cook Is",
-        "value": 8.1
+        "country": "Cook Is",
+        "stat": 8.1
     },
     {
-        "key": "Costa Rica",
-        "value": 9.7
+        "country": "Costa Rica",
+        "stat": 9.7
     },
     {
-        "key": "Cote d'Ivoire",
-        "value": 94.4
+        "country": "Cote d'Ivoire",
+        "stat": 94.4
     },
     {
-        "key": "Croatia",
-        "value": 4.3
+        "country": "Croatia",
+        "stat": 4.3
     },
     {
-        "key": "Cuba",
-        "value": 5.6
+        "country": "Cuba",
+        "stat": 5.6
     },
     {
-        "key": "Cyprus",
-        "value": 3.4
+        "country": "Cyprus",
+        "stat": 3.4
     },
     {
-        "key": "Czech Republic",
-        "value": 3.4
+        "country": "Czech Republic",
+        "stat": 3.4
     },
     {
-        "key": "Czechoslovakia"
+        "country": "Czechoslovakia"
     },
     {
-        "key": "Denmark",
-        "value": 3.5
+        "country": "Denmark",
+        "stat": 3.5
     },
     {
-        "key": "Djibouti",
-        "value": 65.3
+        "country": "Djibouti",
+        "stat": 65.3
     },
     {
-        "key": "Dominica",
-        "value": 21.2
+        "country": "Dominica",
+        "stat": 21.2
     },
     {
-        "key": "Dominican Republic",
-        "value": 30.9
+        "country": "Dominican Republic",
+        "stat": 30.9
     },
     {
-        "key": "East Germany"
+        "country": "East Germany"
     },
     {
-        "key": "Ecuador",
-        "value": 21.6
+        "country": "Ecuador",
+        "stat": 21.6
     },
     {
-        "key": "Egypt",
-        "value": 24
+        "country": "Egypt",
+        "stat": 24
     },
     {
-        "key": "El Salvador",
-        "value": 16.8
+        "country": "El Salvador",
+        "stat": 16.8
     },
     {
-        "key": "Equatorial Guinea",
-        "value": 94.1
+        "country": "Equatorial Guinea",
+        "stat": 94.1
     },
     {
-        "key": "Eritrea",
-        "value": 46.5
+        "country": "Eritrea",
+        "stat": 46.5
     },
     {
-        "key": "Eritrea and Ethiopia"
+        "country": "Eritrea and Ethiopia"
     },
     {
-        "key": "Estonia",
-        "value": 3
+        "country": "Estonia",
+        "stat": 3
     },
     {
-        "key": "Ethiopia",
-        "value": 59.2
+        "country": "Ethiopia",
+        "stat": 59.2
     },
     {
-        "key": "Faeroe Islands"
+        "country": "Faeroe Islands"
     },
     {
-        "key": "Falkland Is (Malvinas)"
+        "country": "Falkland Is (Malvinas)"
     },
     {
-        "key": "Fiji",
-        "value": 22.4
+        "country": "Fiji",
+        "stat": 22.4
     },
     {
-        "key": "Finland",
-        "value": 2.3
+        "country": "Finland",
+        "stat": 2.3
     },
     {
-        "key": "France",
-        "value": 4.3
+        "country": "France",
+        "stat": 4.3
     },
     {
-        "key": "French Guiana",
-        "value": 10.78
+        "country": "French Guiana",
+        "stat": 10.78
     },
     {
-        "key": "French Polynesia",
-        "value": 6.8
+        "country": "French Polynesia",
+        "stat": 6.8
     },
     {
-        "key": "Gabon",
-        "value": 52.2
+        "country": "Gabon",
+        "stat": 52.2
     },
     {
-        "key": "Gambia",
-        "value": 68.9
+        "country": "Gambia",
+        "stat": 68.9
     },
     {
-        "key": "Georgia",
-        "value": 11.9
+        "country": "Georgia",
+        "stat": 11.9
     },
     {
-        "key": "Germany",
-        "value": 3.7
+        "country": "Germany",
+        "stat": 3.7
     },
     {
-        "key": "Ghana",
-        "value": 61.6
+        "country": "Ghana",
+        "stat": 61.6
     },
     {
-        "key": "Gibraltar"
+        "country": "Gibraltar"
     },
     {
-        "key": "Greece",
-        "value": 4.1
+        "country": "Greece",
+        "stat": 4.1
     },
     {
-        "key": "GL, 299"
+        "country": "GL, 299"
     },
     {
-        "key": "Grenada",
-        "value": 11.8
+        "country": "Grenada",
+        "stat": 11.8
     },
     {
-        "key": "Guadeloupe",
-        "value": 5.77
+        "country": "Guadeloupe",
+        "stat": 5.77
     },
     {
-        "key": "Guam",
-        "value": 10.36
+        "country": "Guam",
+        "stat": 10.36
     },
     {
-        "key": "Guatemala",
-        "value": 29.1
+        "country": "Guatemala",
+        "stat": 29.1
     },
     {
-        "key": "Guernsey"
+        "country": "Guernsey"
     },
     {
-        "key": "Guinea",
-        "value": 93.7
+        "country": "Guinea",
+        "stat": 93.7
     },
     {
-        "key": "Guinea-Bissau",
-        "value": 92.5
+        "country": "Guinea-Bissau",
+        "stat": 92.5
     },
     {
-        "key": "Guyana",
-        "value": 39.4
+        "country": "Guyana",
+        "stat": 39.4
     },
     {
-        "key": "Haiti",
-        "value": 69
+        "country": "Haiti",
+        "stat": 69
     },
     {
-        "key": "Holy See"
+        "country": "Holy See"
     },
     {
-        "key": "Honduras",
-        "value": 20.4
+        "country": "Honduras",
+        "stat": 20.4
     },
     {
-        "key": "Hong Kong, China",
-        "value": 2.42
+        "country": "Hong Kong, China",
+        "stat": 2.42
     },
     {
-        "key": "Hungary",
-        "value": 6.2
+        "country": "Hungary",
+        "stat": 6.2
     },
     {
-        "key": "Iceland",
-        "value": 2
+        "country": "Iceland",
+        "stat": 2
     },
     {
-        "key": "India",
-        "value": 47.7
+        "country": "India",
+        "stat": 47.7
     },
     {
-        "key": "Indonesia",
-        "value": 27.2
+        "country": "Indonesia",
+        "stat": 27.2
     },
     {
-        "key": "Iran",
-        "value": 15.5
+        "country": "Iran",
+        "stat": 15.5
     },
     {
-        "key": "Iraq",
-        "value": 32
+        "country": "Iraq",
+        "stat": 32
     },
     {
-        "key": "Ireland",
-        "value": 3.6
+        "country": "Ireland",
+        "stat": 3.6
     },
     {
-        "key": "Isle of Man"
+        "country": "Isle of Man"
     },
     {
-        "key": "Israel",
-        "value": 4
+        "country": "Israel",
+        "stat": 4
     },
     {
-        "key": "Italy",
-        "value": 3.4
+        "country": "Italy",
+        "stat": 3.4
     },
     {
-        "key": "Jamaica",
-        "value": 15.7
+        "country": "Jamaica",
+        "stat": 15.7
     },
     {
-        "key": "Japan",
-        "value": 2.7
+        "country": "Japan",
+        "stat": 2.7
     },
     {
-        "key": "Jersey"
+        "country": "Jersey"
     },
     {
-        "key": "Jordan",
-        "value": 17.9
+        "country": "Jordan",
+        "stat": 17.9
     },
     {
-        "key": "Kazakhstan",
-        "value": 14.1
+        "country": "Kazakhstan",
+        "stat": 14.1
     },
     {
-        "key": "Kenya",
-        "value": 50.6
+        "country": "Kenya",
+        "stat": 50.6
     },
     {
-        "key": "Kiribati",
-        "value": 55.9
+        "country": "Kiribati",
+        "stat": 55.9
     },
     {
-        "key": "North Korea",
-        "value": 24.9
+        "country": "North Korea",
+        "stat": 24.9
     },
     {
-        "key": "South Korea",
-        "value": 3.5
+        "country": "South Korea",
+        "stat": 3.5
     },
     {
-        "key": "United Korea (former)\n"
+        "country": "United Korea (former)\n"
     },
     {
-        "key": "Kuwait",
-        "value": 8.6
+        "country": "Kuwait",
+        "stat": 8.6
     },
     {
-        "key": "Kyrgyz Republic",
-        "value": 21.3
+        "country": "Kyrgyz Republic",
+        "stat": 21.3
     },
     {
-        "key": "Lao",
-        "value": 66.7
+        "country": "Lao",
+        "stat": 66.7
     },
     {
-        "key": "Latvia",
-        "value": 7.9
+        "country": "Latvia",
+        "stat": 7.9
     },
     {
-        "key": "Lebanon",
-        "value": 8.3
+        "country": "Lebanon",
+        "stat": 8.3
     },
     {
-        "key": "Lesotho",
-        "value": 97.1
+        "country": "Lesotho",
+        "stat": 97.1
     },
     {
-        "key": "Liberia",
-        "value": 69.9
+        "country": "Liberia",
+        "stat": 69.9
     },
     {
-        "key": "Libya",
-        "value": 13.4
+        "country": "Libya",
+        "stat": 13.4
     },
     {
-        "key": "Liechtenstein"
+        "country": "Liechtenstein"
     },
     {
-        "key": "Lithuania",
-        "value": 4
+        "country": "Lithuania",
+        "stat": 4
     },
     {
-        "key": "Luxembourg",
-        "value": 1.9
+        "country": "Luxembourg",
+        "stat": 1.9
     },
     {
-        "key": "Macao, China",
-        "value": 4.81
+        "country": "Macao, China",
+        "stat": 4.81
     },
     {
-        "key": "Macedonia, FYR",
-        "value": 5.5
+        "country": "Macedonia, FYR",
+        "stat": 5.5
     },
     {
-        "key": "Madagascar",
-        "value": 49.6
+        "country": "Madagascar",
+        "stat": 49.6
     },
     {
-        "key": "Malawi",
-        "value": 65.4
+        "country": "Malawi",
+        "stat": 65.4
     },
     {
-        "key": "Malaysia",
-        "value": 8.2
+        "country": "Malaysia",
+        "stat": 8.2
     },
     {
-        "key": "Maldives",
-        "value": 8.6
+        "country": "Maldives",
+        "stat": 8.6
     },
     {
-        "key": "Mali",
-        "value": 114.7
+        "country": "Mali",
+        "stat": 114.7
     },
     {
-        "key": "Malta",
-        "value": 5.9
+        "country": "Malta",
+        "stat": 5.9
     },
     {
-        "key": "Marshall Islands",
-        "value": 36
+        "country": "Marshall Islands",
+        "stat": 36
     },
     {
-        "key": "Martinique",
-        "value": 6.58
+        "country": "Martinique",
+        "stat": 6.58
     },
     {
-        "key": "Mauritania",
-        "value": 84.7
+        "country": "Mauritania",
+        "stat": 84.7
     },
     {
-        "key": "Mauritius",
-        "value": 13.5
+        "country": "Mauritius",
+        "stat": 13.5
     },
     {
-        "key": "Mayotte",
-        "value": 4.27
+        "country": "Mayotte",
+        "stat": 4.27
     },
     {
-        "key": "Mexico",
-        "value": 13.2
+        "country": "Mexico",
+        "stat": 13.2
     },
     {
-        "key": "Micronesia, Fed. Sts.",
-        "value": 34.7
+        "country": "Micronesia, Fed. Sts.",
+        "stat": 34.7
     },
     {
-        "key": "Moldova",
-        "value": 15.8
+        "country": "Moldova",
+        "stat": 15.8
     },
     {
-        "key": "Monaco",
-        "value": 3.5
+        "country": "Monaco",
+        "stat": 3.5
     },
     {
-        "key": "Mongolia",
-        "value": 22.4
+        "country": "Mongolia",
+        "stat": 22.4
     },
     {
-        "key": "Montenegro",
-        "value": 4.7
+        "country": "Montenegro",
+        "stat": 4.7
     },
     {
-        "key": "Montserrat"
+        "country": "Montserrat"
     },
     {
-        "key": "Morocco",
-        "value": 27.6
+        "country": "Morocco",
+        "stat": 27.6
     },
     {
-        "key": "Mozambique",
-        "value": 80.6
+        "country": "Mozambique",
+        "stat": 80.6
     },
     {
-        "key": "Myanmar",
-        "value": 50
+        "country": "Myanmar",
+        "stat": 50
     },
     {
-        "key": "Namibia",
-        "value": 46.7
+        "country": "Namibia",
+        "stat": 46.7
     },
     {
-        "key": "Nauru",
-        "value": 35.4
+        "country": "Nauru",
+        "stat": 35.4
     },
     {
-        "key": "Nepal",
-        "value": 35.8
+        "country": "Nepal",
+        "stat": 35.8
     },
     {
-        "key": "Netherlands",
-        "value": 3.8
+        "country": "Netherlands",
+        "stat": 3.8
     },
     {
-        "key": "Netherlands Antilles"
+        "country": "Netherlands Antilles"
     },
     {
-        "key": "New Caledonia",
-        "value": 14.18
+        "country": "New Caledonia",
+        "stat": 14.18
     },
     {
-        "key": "New Zealand",
-        "value": 5.7
+        "country": "New Zealand",
+        "stat": 5.7
     },
     {
-        "key": "Ngorno-Karabakh"
+        "country": "Ngorno-Karabakh"
     },
     {
-        "key": "Nicaragua",
-        "value": 22.1
+        "country": "Nicaragua",
+        "stat": 22.1
     },
     {
-        "key": "Niger",
-        "value": 95.5
+        "country": "Niger",
+        "stat": 95.5
     },
     {
-        "key": "Nigeria",
-        "value": 108.8
+        "country": "Nigeria",
+        "stat": 108.8
     },
     {
-        "key": "Niue",
-        "value": 23
+        "country": "Niue",
+        "stat": 23
     },
     {
-        "key": "Norfolk Island"
+        "country": "Norfolk Island"
     },
     {
-        "key": "Northern Cyprus"
+        "country": "Northern Cyprus"
     },
     {
-        "key": "Northern Mariana Islands"
+        "country": "Northern Mariana Islands"
     },
     {
-        "key": "Norway",
-        "value": 2.5
+        "country": "Norway",
+        "stat": 2.5
     },
     {
-        "key": "Oman",
-        "value": 11.6
+        "country": "Oman",
+        "stat": 11.6
     },
     {
-        "key": "Pakistan",
-        "value": 81.1
+        "country": "Pakistan",
+        "stat": 81.1
     },
     {
-        "key": "Palau",
-        "value": 16.4
+        "country": "Palau",
+        "stat": 16.4
     },
     {
-        "key": "Panama",
-        "value": 17
+        "country": "Panama",
+        "stat": 17
     },
     {
-        "key": "Papua New Guinea",
-        "value": 57.3
+        "country": "Papua New Guinea",
+        "stat": 57.3
     },
     {
-        "key": "Paraguay",
-        "value": 20.5
+        "country": "Paraguay",
+        "stat": 20.5
     },
     {
-        "key": "Peru",
-        "value": 16.9
+        "country": "Peru",
+        "stat": 16.9
     },
     {
-        "key": "Philippines",
-        "value": 28
+        "country": "Philippines",
+        "stat": 28
     },
     {
-        "key": "Pitcairn"
+        "country": "Pitcairn"
     },
     {
-        "key": "Poland",
-        "value": 5.2
+        "country": "Poland",
+        "stat": 5.2
     },
     {
-        "key": "Portugal",
-        "value": 3.6
+        "country": "Portugal",
+        "stat": 3.6
     },
     {
-        "key": "Puerto Rico",
-        "value": 6.69
+        "country": "Puerto Rico",
+        "stat": 6.69
     },
     {
-        "key": "Qatar",
-        "value": 7.7
+        "country": "Qatar",
+        "stat": 7.7
     },
     {
-        "key": "Reunion",
-        "value": 4.28
+        "country": "Reunion",
+        "stat": 4.28
     },
     {
-        "key": "Romania",
-        "value": 11.1
+        "country": "Romania",
+        "stat": 11.1
     },
     {
-        "key": "Russia",
-        "value": 9.6
+        "country": "Russia",
+        "stat": 9.6
     },
     {
-        "key": "Rwanda",
-        "value": 42
+        "country": "Rwanda",
+        "stat": 42
     },
     {
-        "key": "St. Barthélemy"
+        "country": "St. Barthélemy"
     },
     {
-        "key": "St. Helena"
+        "country": "St. Helena"
     },
     {
-        "key": "St. Kitts and Nevis",
-        "value": 10.5
+        "country": "St. Kitts and Nevis",
+        "stat": 10.5
     },
     {
-        "key": "St. Lucia",
-        "value": 14.3
+        "country": "St. Lucia",
+        "stat": 14.3
     },
     {
-        "key": "St. Martin"
+        "country": "St. Martin"
     },
     {
-        "key": "St. Vincent and the Grenadines",
-        "value": 18.3
+        "country": "St. Vincent and the Grenadines",
+        "stat": 18.3
     },
     {
-        "key": "St.-Pierre-et-Miquelon"
+        "country": "St.-Pierre-et-Miquelon"
     },
     {
-        "key": "Samoa",
-        "value": 17.5
+        "country": "Samoa",
+        "stat": 17.5
     },
     {
-        "key": "San Marino",
-        "value": 2.9
+        "country": "San Marino",
+        "stat": 2.9
     },
     {
-        "key": "Sao Tome and Principe",
-        "value": 47.3
+        "country": "Sao Tome and Principe",
+        "stat": 47.3
     },
     {
-        "key": "Saudi Arabia",
-        "value": 14.5
+        "country": "Saudi Arabia",
+        "stat": 14.5
     },
     {
-        "key": "Senegal",
-        "value": 47.2
+        "country": "Senegal",
+        "stat": 47.2
     },
     {
-        "key": "Serbia",
-        "value": 6.7
+        "country": "Serbia",
+        "stat": 6.7
     },
     {
-        "key": "Serbia and Montenegro"
+        "country": "Serbia and Montenegro"
     },
     {
-        "key": "Serbia excluding Kosovo"
+        "country": "Serbia excluding Kosovo"
     },
     {
-        "key": "Seychelles",
-        "value": 13.6
+        "country": "Seychelles",
+        "stat": 13.6
     },
     {
-        "key": "Sierra Leone",
-        "value": 120.4
+        "country": "Sierra Leone",
+        "stat": 120.4
     },
     {
-        "key": "Singapore",
-        "value": 2.7
+        "country": "Singapore",
+        "stat": 2.7
     },
     {
-        "key": "Slovak Republic",
-        "value": 6.7
+        "country": "Slovak Republic",
+        "stat": 6.7
     },
     {
-        "key": "Slovenia",
-        "value": 2.7
+        "country": "Slovenia",
+        "stat": 2.7
     },
     {
-        "key": "Solomon Islands",
-        "value": 28.1
+        "country": "Solomon Islands",
+        "stat": 28.1
     },
     {
-        "key": "Somalia",
-        "value": 136.8
+        "country": "Somalia",
+        "stat": 136.8
     },
     {
-        "key": "Somaliland"
+        "country": "Somaliland"
     },
     {
-        "key": "South Africa",
-        "value": 42.1
+        "country": "South Africa",
+        "stat": 42.1
     },
     {
-        "key": "South Ossetia"
+        "country": "South Ossetia"
     },
     {
-        "key": "Spain",
-        "value": 4.1
+        "country": "Spain",
+        "stat": 4.1
     },
     {
-        "key": "Sri Lanka",
-        "value": 8.7
+        "country": "Sri Lanka",
+        "stat": 8.7
     },
     {
-        "key": "Sudan",
-        "value": 70.1
+        "country": "Sudan",
+        "stat": 70.1
     },
     {
-        "key": "Suriname",
-        "value": 21.3
+        "country": "Suriname",
+        "stat": 21.3
     },
     {
-        "key": "Svalbard"
+        "country": "Svalbard"
     },
     {
-        "key": "Swaziland",
-        "value": 69.6
+        "country": "Swaziland",
+        "stat": 69.6
     },
     {
-        "key": "Sweden",
-        "value": 3
+        "country": "Sweden",
+        "stat": 3
     },
     {
-        "key": "Switzerland",
-        "value": 3.9
+        "country": "Switzerland",
+        "stat": 3.9
     },
     {
-        "key": "Syria",
-        "value": 12.9
+        "country": "Syria",
+        "stat": 12.9
     },
     {
-        "key": "TW, 34"
+        "country": "TW, 34"
     },
     {
-        "key": "Tajikistan",
-        "value": 44.8
+        "country": "Tajikistan",
+        "stat": 44.8
     },
     {
-        "key": "Tanzania",
-        "value": 48.4
+        "country": "Tanzania",
+        "stat": 48.4
     },
     {
-        "key": "Thailand",
-        "value": 12.3
+        "country": "Thailand",
+        "stat": 12.3
     },
     {
-        "key": "Timor-Leste",
-        "value": 52.6
+        "country": "Timor-Leste",
+        "stat": 52.6
     },
     {
-        "key": "Togo",
-        "value": 78.4
+        "country": "Togo",
+        "stat": 78.4
     },
     {
-        "key": "Tokelau"
+        "country": "Tokelau"
     },
     {
-        "key": "Tonga",
-        "value": 16.7
+        "country": "Tonga",
+        "stat": 16.7
     },
     {
-        "key": "Transnistria"
+        "country": "Transnistria"
     },
     {
-        "key": "Trinidad and Tobago",
-        "value": 20.4
+        "country": "Trinidad and Tobago",
+        "stat": 20.4
     },
     {
-        "key": "Tunisia",
-        "value": 14
+        "country": "Tunisia",
+        "stat": 14
     },
     {
-        "key": "Turkey",
-        "value": 13.5
+        "country": "Turkey",
+        "stat": 13.5
     },
     {
-        "key": "Turkmenistan",
-        "value": 51.4
+        "country": "Turkmenistan",
+        "stat": 51.4
     },
     {
-        "key": "Turks and Caicos Islands"
+        "country": "Turks and Caicos Islands"
     },
     {
-        "key": "Tuvalu",
-        "value": 27.1
+        "country": "Tuvalu",
+        "stat": 27.1
     },
     {
-        "key": "Uganda",
-        "value": 59.5
+        "country": "Uganda",
+        "stat": 59.5
     },
     {
-        "key": "Ukraine",
-        "value": 9
+        "country": "Ukraine",
+        "stat": 9
     },
     {
-        "key": "United Arab Emirates",
-        "value": 6.8
+        "country": "United Arab Emirates",
+        "stat": 6.8
     },
     {
-        "key": "United Kingdom",
-        "value": 4.2
+        "country": "United Kingdom",
+        "stat": 4.2
     },
     {
-        "key": "United States",
-        "value": 6.5
+        "country": "United States",
+        "stat": 6.5
     },
     {
-        "key": "Uruguay",
-        "value": 10.1
+        "country": "Uruguay",
+        "stat": 10.1
     },
     {
-        "key": "USSR"
+        "country": "USSR"
     },
     {
-        "key": "Uzbekistan",
-        "value": 39.1
+        "country": "Uzbekistan",
+        "stat": 39.1
     },
     {
-        "key": "Wallis et Futuna"
+        "country": "Wallis et Futuna"
     },
     {
-        "key": "Vanuatu",
-        "value": 27.5
+        "country": "Vanuatu",
+        "stat": 27.5
     },
     {
-        "key": "Venezuela",
-        "value": 14.9
+        "country": "Venezuela",
+        "stat": 14.9
     },
     {
-        "key": "West Bank and Gaza",
-        "value": 21.1
+        "country": "West Bank and Gaza",
+        "stat": 21.1
     },
     {
-        "key": "West Germany"
+        "country": "West Germany"
     },
     {
-        "key": "Western Sahara",
-        "value": 41.45
+        "country": "Western Sahara",
+        "stat": 41.45
     },
     {
-        "key": "Vietnam",
-        "value": 21.7
+        "country": "Vietnam",
+        "stat": 21.7
     },
     {
-        "key": "Virgin Islands (U.S.)",
-        "value": 10.33
+        "country": "Virgin Islands (U.S.)",
+        "stat": 10.33
     },
     {
-        "key": "North Yemen (former)"
+        "country": "North Yemen (former)"
     },
     {
-        "key": "South Yemen (former)"
+        "country": "South Yemen (former)"
     },
     {
-        "key": "Yemen",
-        "value": 47.5
+        "country": "Yemen",
+        "stat": 47.5
     },
     {
-        "key": "Yugoslavia"
+        "country": "Yugoslavia"
     },
     {
-        "key": "Zambia",
-        "value": 67.8
+        "country": "Zambia",
+        "stat": 67.8
     },
     {
-        "key": "Zimbabwe",
-        "value": 79.6
+        "country": "Zimbabwe",
+        "stat": 79.6
     },
     {
-        "key": "Åland"
+        "country": "Åland"
     },
     {
-        "key": "South Sudan",
-        "value": 92.6
+        "country": "South Sudan",
+        "stat": 92.6
     },
     {
-        "key": "Curaçao",
-        "value": 11.33
+        "country": "Curaçao",
+        "stat": 11.33
     },
     {
-        "key": "Sint Maarten (Dutch part)"
+        "country": "Sint Maarten (Dutch part)"
     },
     {
-        "key": "St. Martin (French part)"
+        "country": "St. Martin (French part)"
     },
     {
-        "key": "Antarctica"
+        "country": "Antarctica"
     },
     {
-        "key": "Bouvet Island"
+        "country": "Bouvet Island"
     },
     {
-        "key": "British Indian Ocean Territory"
+        "country": "British Indian Ocean Territory"
     },
     {
-        "key": "Clipperton"
+        "country": "Clipperton"
     },
     {
-        "key": "French Southern and Antarctic Lands"
+        "country": "French Southern and Antarctic Lands"
     },
     {
-        "key": "Gaza Strip"
+        "country": "Gaza Strip"
     },
     {
-        "key": "Heard and McDonald Islands"
+        "country": "Heard and McDonald Islands"
     },
     {
-        "key": "Northern Marianas"
+        "country": "Northern Marianas"
     },
     {
-        "key": "South Georgia and the South Sandwich Islands"
+        "country": "South Georgia and the South Sandwich Islands"
     },
     {
-        "key": "US Minor Outlying Islands"
+        "country": "US Minor Outlying Islands"
     },
     {
-        "key": "Virgin Islands"
+        "country": "Virgin Islands"
     },
     {
-        "key": "West Bank"
+        "country": "West Bank"
     }
 ]
