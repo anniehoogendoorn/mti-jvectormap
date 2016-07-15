@@ -106,6 +106,28 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/marker.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12860,
+		"inputAbbreviatedPath": "\/marker.png",
+		"outputAbbreviatedPath": "\/marker.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/marker3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2218,
+		"inputAbbreviatedPath": "\/marker3.png",
+		"outputAbbreviatedPath": "\/marker3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/markers.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -123,6 +145,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/min\/gdp-data-min.js",
 		"outputAbbreviatedPath": "\/min\/min\/gdp-data-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/min\/jquery-jvectormap-2.0.3-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/min\/jquery-jvectormap-2.0.3-min.js",
+		"outputAbbreviatedPath": "\/min\/min\/jquery-jvectormap-2.0.3-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -150,6 +183,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/min\/process-original-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/min\/process-original-min.js",
+		"outputAbbreviatedPath": "\/min\/min\/process-original-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/mortality.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -157,17 +201,6 @@
 		"inputAbbreviatedPath": "\/mortality.json",
 		"orderOutput": 0,
 		"outputAbbreviatedPath": "\/mortality-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
-		},
-	"\/mortality2.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/mortality2.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/mortality2-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
@@ -183,13 +216,13 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/physicians.json": {
+	"\/physician.json": {
 		"fileType": 524288,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/physicians.json",
+		"inputAbbreviatedPath": "\/physician.json",
 		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/physicians-min.json",
+		"outputAbbreviatedPath": "\/physician-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1

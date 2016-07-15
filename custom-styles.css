@@ -14,6 +14,16 @@
   max-height: 600px;
 }
 
+#physician-map {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+  max-height: 600px;
+}
+
+
 /* GENERAL */
 body {
     font-family: "purista-web-n4","purista-web", Arial, Helvetica, sans-serif;
@@ -21,6 +31,9 @@ body {
 }
 
 /*CUSTOMISED JVECTORMAP CSS*/
+image {
+  width: -15px;
+}
 
 /*Info window*/
 .jvectormap-tip {
@@ -35,9 +48,42 @@ body {
     padding: 0 10px 15px;
     margin: -15px;
     max-width: 250px;
+    /*overflow: hidden;*/
 }
 
 .jvectormap-tip a {
   text-decoration: none;
   color: #21ACDE;
+}
+
+div.info-window {
+  max-width: 250px;
+  position: relative;
+  background: pink;
+}
+
+/*div.info-window:before{
+  content: '';
+  background: orange;
+  width: calc(100% + 50px);
+  height: calc(100% + 50px);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}*/
+
+/*.info-window:hover + .jvectormap-tip {
+  display: block !important;
+}*/
+
+/*.jvectormap-tip {
+  display: block !important;
+}*/
+
+.is-hover {
+  display: block !important;
+}
+
+circle {
+  fill: url('icon-map-marker.svg');
 }

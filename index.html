@@ -16,12 +16,12 @@
 <body>
   <div class="map-container">
 
-    <div id="world-map-gdp"  ></div>
-    <!-- <script>
-    $(function(){
-    $('#world-map').vectorMap({map: 'world_mill'});
-  });
-</script> -->
+    <div id="world-map-gdp" ></div>
+  </div>
+  <div class="map-container">
+    <div id="physician-map"></div>
+
+  </div>
 <script>
 
 
@@ -48,15 +48,21 @@ $(function(){
       }
     },
     markers: markers,
+    // markerStyle: {
+    //         initial: {
+    //           image: 'icon-map-marker.svg',
+    //         },
+    //        },
     markerStyle: {
             initial: {
               fill: scope.markerColor,
-              stroke: scope.strokeColor
-            }
+              stroke: scope.strokeColor,
+              image: 'marker3.png'
+            },
           },
     series: {
       regions: [{
-        values: gdpData,
+        values: mortalityResult,
         scale: scope.scaleColors,
         normalizeFunction: 'polynomial'
       }]
@@ -66,7 +72,62 @@ $(function(){
       // }]
     },
     onRegionTipShow: function(e, label, index){
-      label.html(label.html()+'<br> (GDP - '+gdpData[index]+')');
+      label.html(label.html()+'<br> (Rate - '+mortalityResult[index]+')');
+    },
+    onMarkerTipShow: function(event, label, index){
+      label.html('<div class="info-window"><h3>'+label.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'">Where we work >></a></div>');
+    }
+    // markersSelectableOne: true
+    // onMarkerClick: function(event, code){
+    // label.show();
+    // }
+});
+
+
+});//function
+
+
+//physicians map
+$(function(){
+  var scope = {};
+  scope.bgColor = '#fff';
+  scope.scaleColors = ['#fbf0f1','#cb333b'];
+  scope.fillColor = '#e7e7e9';
+  scope.strokeColor = '#fff';
+  scope.strokeWidth = '0.4';
+  scope.markerColor = 'aqua'
+
+  $('#physician-map').vectorMap({
+    map: 'world_mill_en',
+    backgroundColor: scope.bgColor,
+    zoomOnScroll: false,
+    regionStyle: {
+      initial: {
+        fill: scope.fillColor,
+        stroke: scope.strokeColor,
+        "stroke-width": scope.strokeWidth
+      }
+    },
+    markers: markers,
+    markerStyle: {
+            initial: {
+              fill: scope.markerColor,
+              stroke: scope.strokeColor
+            }
+          },
+    series: {
+      regions: [{
+        values: physicianResult,
+        scale: scope.scaleColors,
+        normalizeFunction: 'polynomial'
+      }]
+      // markers: [{
+      //   attribute: fill,
+      //
+      // }]
+    },
+    onRegionTipShow: function(e, label, index){
+      label.html(label.html()+'<br> (GDP - '+physicianResult[index]+')');
     },
     // onMarkerTipShow: function(event, label, code){
     //   label.html("<p>Name:<br>"+ label.html()+"</p>");
@@ -81,6 +142,12 @@ $(function(){
 
 
 });
+
+
+
+
+
+
 </script>
   </div>
 </body>
