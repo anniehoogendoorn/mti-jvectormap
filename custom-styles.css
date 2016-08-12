@@ -38,26 +38,33 @@ image {
   top: -30px;
 }
 
-image:after {
-
-}
-
 #customTip {
-  position: absolute;
-  top: 30
+  padding: 05px 20px 25px;
 }
+#customTip button {
+  float: right;
+  color: #999;
+  font-size: 18px;
+  font-weight: 300;
+  background: #fff;
+  border: none;
+  margin-top: 5px;
+}
+
+#customTip button:hover {
+  cursor: pointer;
+}
+
 
 /*Info window*/
 .jvectormap-tip {
-    /*position: absolute;*/
-    /*display: inline;*/
     border: solid 1px #F4F4F4;
     border-radius: 3px;
     background: #fff;
     color: #53564A;
     font-family: sans-serif, Verdana;
     font-size: smaller;
-    padding: 0 10px 15px;
+    /*padding: 0 15px 15px;*/
     margin: -10px;
     max-width: 250px;
     /*overflow: hidden;*/
@@ -67,6 +74,7 @@ image:after {
   text-decoration: none;
   color: #21ACDE;
 }
+
 
 /*div.info-window {
   max-width: 250px;

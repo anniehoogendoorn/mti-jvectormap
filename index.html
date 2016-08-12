@@ -71,7 +71,7 @@ $(function(){
       label.html(label.html()+'<br> (Rate - '+mortalityResult[index]+')');
     },
     onMarkerTipShow: function(event, tip, index){
-      tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'">Where we work >></a></div>');
+      tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work >></a></div>');
       event.preventDefault();
     },
     onMarkerOver: function(event, tip, code){
@@ -89,9 +89,9 @@ $(function(){
                 top: top
               })
 
-      customTip.html(map.tip.text(tip.html));
-      customTip.prepend("<p>X</p>");
-      customTip.children("p").click(function(){
+      customTip.html(map.tip.html());
+      customTip.prepend("<button>&#215;</button>");
+      customTip.children("button").click(function(){
                  customTip.hide();
                })
 
