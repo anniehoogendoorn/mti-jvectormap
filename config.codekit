@@ -117,6 +117,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/marker2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1729,
+		"inputAbbreviatedPath": "\/marker2.png",
+		"outputAbbreviatedPath": "\/marker2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/marker3.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -124,6 +135,17 @@
 		"initialSize": 2218,
 		"inputAbbreviatedPath": "\/marker3.png",
 		"outputAbbreviatedPath": "\/marker3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/marker4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2564,
+		"inputAbbreviatedPath": "\/marker4.png",
+		"outputAbbreviatedPath": "\/marker4.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

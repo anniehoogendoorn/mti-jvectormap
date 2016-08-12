@@ -17,10 +17,10 @@
   <div class="map-container">
 
     <div id="world-map-gdp" ></div>
+    <div id="customTip" class="jvectormap-tip"></div>
   </div>
   <div class="map-container">
     <div id="physician-map"></div>
-
   </div>
 <script>
 
@@ -29,7 +29,7 @@
 
 $(function(){
   var scope = {};
-  scope.bgColor = '#fff';
+  scope.bgColor = 'transparant';
   scope.scaleColors = ['#fbf0f1','#cb333b'];
   scope.fillColor = '#e7e7e9';
   scope.strokeColor = '#fff';
@@ -48,16 +48,12 @@ $(function(){
       }
     },
     markers: markers,
-    // markerStyle: {
-    //         initial: {
-    //           image: 'icon-map-marker.svg',
-    //         },
-    //        },
     markerStyle: {
             initial: {
+              r: 8,
               fill: scope.markerColor,
-              stroke: scope.strokeColor,
-              image: 'marker3.png'
+              stroke: scope.strokeColor
+              // image: 'marker4.png'
             },
           },
     series: {
@@ -74,17 +70,43 @@ $(function(){
     onRegionTipShow: function(e, label, index){
       label.html(label.html()+'<br> (Rate - '+mortalityResult[index]+')');
     },
-    onMarkerTipShow: function(event, label, index){
-      label.html('<div class="info-window"><h3>'+label.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'">Where we work >></a></div>');
+    onMarkerTipShow: function(event, tip, index){
+      tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'">Where we work >></a></div>');
+      event.preventDefault();
+    },
+    onMarkerOver: function(event, tip, code){
+      // console.log('You have triggered mouseover');
+
+
+    },
+    onMarkerClick: function(event, tip, code ) {
+      console.log('You have triggered click');
+      var map = $('#world-map-gdp').vectorMap('get', 'mapObject');
+      var customTip = $('#customTip');
+
+      customTip.css({
+                left: left,
+                top: top
+              })
+
+      customTip.html(map.tip.text(tip.html));
+      customTip.prepend("<p>X</p>");
+      customTip.children("p").click(function(){
+                 customTip.hide();
+               })
+
+         // customTip.html('<h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'">Where we work >></a>')
+      customTip.show();
     }
-    // markersSelectableOne: true
-    // onMarkerClick: function(event, code){
-    // label.show();
-    // }
 });
+var left,top;
+$('#world-map-gdp').vectorMap('get', 'mapObject').container.mousemove(function(e){
+  left = e.pageX - 300;
+  top = e.pageY - 60;
 
+});//end vectorMap
 
-});//function
+});// end function
 
 
 //physicians map

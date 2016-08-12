@@ -38,6 +38,7 @@ processData("physician.json", physicianResult);
 //   $(this).parent().removeClass('is-hover');
 // });
 // debugger;
-$('circle.jvectormap-marker.jvectormap-element').click(function() {
-  console.log('this works');
+
+$(  'circle.jvectormap-marker.jvectormap-element'  ).mouseover( function(){
+    console.log( 'You have triggered mouseover' );
 });

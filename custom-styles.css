@@ -32,13 +32,25 @@ body {
 
 /*CUSTOMISED JVECTORMAP CSS*/
 image {
-  width: -15px;
+  /*width: -15px;*/
+  height: 22px;
+  display: relative;
+  top: -30px;
+}
+
+image:after {
+
+}
+
+#customTip {
+  position: absolute;
+  top: 30
 }
 
 /*Info window*/
 .jvectormap-tip {
-    position: absolute;
-    display: inline;
+    /*position: absolute;*/
+    /*display: inline;*/
     border: solid 1px #F4F4F4;
     border-radius: 3px;
     background: #fff;
@@ -46,7 +58,7 @@ image {
     font-family: sans-serif, Verdana;
     font-size: smaller;
     padding: 0 10px 15px;
-    margin: -15px;
+    margin: -10px;
     max-width: 250px;
     /*overflow: hidden;*/
 }
@@ -56,11 +68,11 @@ image {
   color: #21ACDE;
 }
 
-div.info-window {
+/*div.info-window {
   max-width: 250px;
   position: relative;
   background: pink;
-}
+}*/
 
 /*div.info-window:before{
   content: '';
@@ -80,10 +92,6 @@ div.info-window {
   display: block !important;
 }*/
 
-.is-hover {
+/*.is-hover {
   display: block !important;
-}
-
-circle {
-  fill: url('icon-map-marker.svg');
-}
+}*/
