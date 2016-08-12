@@ -34,7 +34,7 @@ $(function(){
   scope.fillColor = '#e7e7e9';
   scope.strokeColor = '#fff';
   scope.strokeWidth = '0.4';
-  scope.markerColor = 'aqua'
+  scope.markerColor = '#21ACDE'
 
   $('#world-map-gdp').vectorMap({
     map: 'world_mill_en',
@@ -71,7 +71,7 @@ $(function(){
       label.html(label.html()+'<br> (Rate - '+mortalityResult[index]+')');
     },
     onMarkerTipShow: function(event, tip, index){
-      tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work >></a></div>');
+      tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work &#62;&#62;</a></div>');
       event.preventDefault();
     },
     onMarkerOver: function(event, tip, code){
@@ -101,8 +101,8 @@ $(function(){
 });
 var left,top;
 $('#world-map-gdp').vectorMap('get', 'mapObject').container.mousemove(function(e){
-  left = e.pageX - 300;
-  top = e.pageY - 60;
+  left = e.pageX - 320;
+  top = e.pageY - 220;
 
 });//end vectorMap
 

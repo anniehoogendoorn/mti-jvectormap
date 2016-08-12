@@ -39,13 +39,17 @@ image {
 }
 
 #customTip {
-  padding: 05px 20px 25px;
+  display: none;
+  padding: 10px 20px 25px;
+  line-height: 1.438em;
+  /*line-height: 23px;*/
+  max-width: 250px;
 }
 #customTip button {
   float: right;
-  color: #999;
+  color: #aaa;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   background: #fff;
   border: none;
   margin-top: 5px;
@@ -66,7 +70,6 @@ image {
     font-size: smaller;
     /*padding: 0 15px 15px;*/
     margin: -10px;
-    max-width: 250px;
     /*overflow: hidden;*/
 }
 
