@@ -40,23 +40,29 @@ image {
 
 #customTip {
   display: none;
-  padding: 10px 20px 25px;
+  padding: 10px 15px 25px;
   line-height: 1.438em;
   /*line-height: 23px;*/
   max-width: 250px;
 }
 #customTip button {
   float: right;
-  color: #aaa;
+  color: #ccc;
   font-size: 18px;
   font-weight: 400;
   background: #fff;
   border: none;
-  margin-top: 5px;
+  /*margin-top: 5px;*/
+  padding-right: 0;
 }
 
 #customTip button:hover {
   cursor: pointer;
+  color: #bbb;
+}
+
+#customTip span {
+  font-weight: 400;
 }
 
 

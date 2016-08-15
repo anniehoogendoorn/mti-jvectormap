@@ -71,7 +71,7 @@ $(function(){
       label.html(label.html()+'<br> (Rate - '+mortalityResult[index]+')');
     },
     onMarkerTipShow: function(event, tip, index){
-      tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work &#62;&#62;</a></div>');
+      tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
       event.preventDefault();
     },
     onMarkerOver: function(event, tip, code){
