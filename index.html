@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
   <script src="jquery-1.12.3.min.js"></script>
   <script src="process.js"></script>
-  <script src="jquery-jvectormap-2.0.3.min.js"></script>
+  <script src="jquery-jvectormap-2.0.3.js"></script>
   <script src="jquery-jvectormap-world-mill-en.js"></script>
   <!-- <script src="gdp-data.js"></script> -->
   <script src="markers.js"></script>
@@ -49,13 +49,13 @@ $(function(){
     },
     markers: markers,
     markerStyle: {
-            initial: {
-              r: 8,
-              fill: scope.markerColor,
-              stroke: scope.strokeColor
-              // image: 'marker4.png'
-            },
-          },
+      initial: {
+        r: 8,
+        fill: scope.markerColor,
+        stroke: scope.strokeColor
+        // image: 'marker4.png'
+      },
+    },
     series: {
       regions: [{
         values: mortalityResult,

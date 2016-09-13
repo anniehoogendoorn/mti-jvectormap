@@ -666,14 +666,14 @@ jvm.$ = jQuery, Array.prototype.indexOf || (Array.prototype.indexOf = function(s
         dy: "0.6ex",
         x: this.labelX,
         y: this.labelY
-    }, config.labelStyle, config.labelsGroup), this.label.addClass("jvectormap-marker jvectormap-element"))
+    }, config.labelStyle, config.labelsGroup), this.label.addClass("jvectormap-marker jvectormap-element pulse"))
 }, jvm.inherits(jvm.Marker, jvm.MapObject), jvm.Marker.prototype.createShape = function() {
     var that = this;
     this.shape && this.shape.remove(), this.shape = this.config.canvas[this.isImage ? "addImage" : "addCircle"]({
         "data-index": this.config.index,
         cx: this.config.cx,
         cy: this.config.cy
-    }, this.config.style, this.config.group), this.shape.addClass("jvectormap-marker jvectormap-element"), this.isImage && jvm.$(this.shape.node).on("imageloaded", function() {
+    }, this.config.style, this.config.group), this.shape.addClass("jvectormap-marker jvectormap-element pulse"), this.isImage && jvm.$(this.shape.node).on("imageloaded", function() {
         that.updateLabelPosition()
     })
 }, jvm.Marker.prototype.updateLabelPosition = function() {
