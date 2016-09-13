@@ -3,15 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>jVectorMap demo</title>
-  <link rel="stylesheet" href="jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
-  <script src="jquery-1.12.3.min.js"></script>
-  <script src="process.js"></script>
-  <script src="jquery-jvectormap-2.0.3.js"></script>
-  <script src="jquery-jvectormap-world-mill-en.js"></script>
+  <link rel="stylesheet" href="assets/css/jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
+  <script src="assets/js/jquery-1.12.3.min.js"></script>
+  <script src="assets/js/jquery-jvectormap-2.0.3-min.js"></script>
+  <script src="assets/js/jquery-jvectormap-world-mill-en-min.js"></script>
+  <script src="assets/js/markers-min.js"></script>
+  <script src="assets/data/mortality-data-min.js"></script>
+  <script src="assets/data/physician-data-min.js"></script>
+  <script src="assets/data/gdp-data-min.js"></script>
+  <script src="dev/js/process.js"></script>
   <!-- <script src="gdp-data.js"></script> -->
-  <script src="markers.js"></script>
 
-  <link rel="stylesheet" href="custom-styles.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="assets/css/custom-styles.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
   <div class="map-container">
@@ -19,9 +22,9 @@
     <div id="world-map-gdp" ></div>
     <div id="customTip" class="jvectormap-tip"></div>
   </div>
-  <div class="map-container">
+  <!-- <div class="map-container">
     <div id="physician-map"></div>
-  </div>
+  </div> -->
 <script>
 
 
@@ -58,7 +61,7 @@ $(function(){
     },
     series: {
       regions: [{
-        values: mortalityResult,
+        values: mortalityData,
         scale: scope.scaleColors,
         normalizeFunction: 'polynomial'
       }]
@@ -109,7 +112,7 @@ $('#world-map-gdp').vectorMap('get', 'mapObject').container.mousemove(function(e
 });// end function
 
 
-//physicians map
+// physicians map
 $(function(){
   var scope = {};
   scope.bgColor = '#fff';
@@ -139,30 +142,18 @@ $(function(){
           },
     series: {
       regions: [{
-        values: physicianResult,
+        values: gdpData,
         scale: scope.scaleColors,
         normalizeFunction: 'polynomial'
       }]
-      // markers: [{
-      //   attribute: fill,
-      //
-      // }]
     },
     onRegionTipShow: function(e, label, index){
       label.html(label.html()+'<br> (GDP - '+physicianResult[index]+')');
     },
-    // onMarkerTipShow: function(event, label, code){
-    //   label.html("<p>Name:<br>"+ label.html()+"</p>");
-    // }
     onMarkerTipShow: function(event, label, index){
       label.html('<h3>'+label.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'">Where we work >></a>');
     }
   });
-
-
-
-
-
 });
 
 
