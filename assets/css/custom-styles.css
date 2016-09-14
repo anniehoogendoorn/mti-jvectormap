@@ -1,0 +1,183 @@
+/* GENERAL */
+body {
+  font-family: "purista-web-n4","purista-web", Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+}
+
+p {
+  font-size: .8rem;
+  color: #53564A;
+}
+
+
+li {
+  font-size: .6rem;
+  text-align: left:
+}
+
+a {
+  text-decoration: none;
+  color: #21ACDE;
+}
+
+/* MENU BAR */
+
+.map-menu {
+  /*width: 900px;*/
+  text-align: center;
+}
+
+button {
+  background: #f0f0f1;
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  margin-right: -5px;
+  font-size: 15px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.selected {
+  background: white;
+  padding-top: 10px;
+  border-bottom: none;
+}
+
+
+/* MAPS */
+
+
+.map-container  {
+  /*width: 100%;
+  height: 100%;*/
+  margin: 0 auto;
+  max-width: 900px;
+  max-height: 600px;
+}
+
+.map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+  max-height: 600px;
+}
+
+#map-1 {
+  display: none;
+
+}
+
+#map-2 {
+  /*display: none;*/
+}
+
+
+
+/* Marker animation */
+
+/*@-webkit-keyframes svg_pulse {
+     0% {
+        -webkit-transform: matrix(1,0,01,0,0);
+        stroke-width: 1;
+        opacity: 1;
+     }
+
+     50% {
+        opacity: 1;
+     }
+     100% {
+        -webkit-transform: matrix(4,0,0,4,-120,-120);
+        stroke-width: 0.25;
+        opacity: 0;
+     }
+}
+
+.pulse {
+    -webkit-animation: svg_pulse 3s ease;
+    -webkit-animation-iteration-count: infinite;
+}*/
+/*Custom Tip Info Window*/
+image {
+  /*width: -15px;*/
+  height: 22px;
+  display: relative;
+  top: -30px;
+}
+
+#customTip {
+  display: none;
+  padding: 10px 15px 25px;
+  line-height: 1.438em;
+  /*line-height: 23px;*/
+  max-width: 250px;
+}
+#customTip button {
+  float: right;
+  color: #ccc;
+  font-size: 18px;
+  font-weight: 400;
+  background: #fff;
+  border: none;
+  /*margin-top: 5px;*/
+  padding-right: 0;
+}
+
+#customTip button:hover {
+  cursor: pointer;
+  color: #bbb;
+}
+
+#customTip span {
+  font-weight: 400;
+}
+
+
+/* Customised jvectormap css */
+.jvectormap-tip {
+    border: solid 1px #F4F4F4;
+    border-radius: 3px;
+    background: #fff;
+    color: #53564A;
+    font-family: sans-serif, Verdana;
+    font-size: smaller;
+    /*padding: 0 15px 15px;*/
+    margin: -10px;
+    /*overflow: hidden;*/
+}
+
+.jvectormap-tip a {
+  text-decoration: none;
+  color: #21ACDE;
+}
+
+
+/*div.info-window {
+  max-width: 250px;
+  position: relative;
+  background: pink;
+}*/
+
+/*div.info-window:before{
+  content: '';
+  background: orange;
+  width: calc(100% + 50px);
+  height: calc(100% + 50px);
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}*/
+
+/*.info-window:hover + .jvectormap-tip {
+  display: block !important;
+}*/
+
+/*.jvectormap-tip {
+  display: block !important;
+}*/
+
+/*.is-hover {
+  display: block !important;
+}*/

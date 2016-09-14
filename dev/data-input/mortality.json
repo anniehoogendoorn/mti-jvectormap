@@ -1,0 +1,1035 @@
+[
+    {
+        "country": "Abkhazia"
+    },
+    {
+        "country": "Afghanistan",
+        "stat": 91.1
+    },
+    {
+        "country": "Akrotiri and Dhekelia"
+    },
+    {
+        "country": "Albania",
+        "stat": 14
+    },
+    {
+        "country": "Algeria",
+        "stat": 24
+    },
+    {
+        "country": "American Samoa"
+    },
+    {
+        "country": "Andorra",
+        "stat": 2.8
+    },
+    {
+        "country": "Angola",
+        "stat": 156.9
+    },
+    {
+        "country": "Anguilla"
+    },
+    {
+        "country": "Antigua and Barbuda",
+        "stat": 8.1
+    },
+    {
+        "country": "Argentina",
+        "stat": 12.5
+    },
+    {
+        "country": "Armenia",
+        "stat": 14.2
+    },
+    {
+        "country": "Aruba",
+        "stat": 16.57
+    },
+    {
+        "country": "Australia",
+        "stat": 3.5
+    },
+    {
+        "country": "Austria",
+        "stat": 3.5
+    },
+    {
+        "country": "Azerbaijan",
+        "stat": 31.7
+    },
+    {
+        "country": "Bahamas",
+        "stat": 12.1
+    },
+    {
+        "country": "Bahrain",
+        "stat": 6.2
+    },
+    {
+        "country": "Bangladesh",
+        "stat": 37.6
+    },
+    {
+        "country": "Barbados",
+        "stat": 13
+    },
+    {
+        "country": "Belarus",
+        "stat": 4.4
+    },
+    {
+        "country": "Belgium",
+        "stat": 4.1
+    },
+    {
+        "country": "Belize",
+        "stat": 16.5
+    },
+    {
+        "country": "Benin",
+        "stat": 99.5
+    },
+    {
+        "country": "Bermuda"
+    },
+    {
+        "country": "Bhutan",
+        "stat": 32.9
+    },
+    {
+        "country": "Bolivia",
+        "stat": 38.4
+    },
+    {
+        "country": "Bosnia and Herzegovina",
+        "stat": 6
+    },
+    {
+        "country": "Botswana",
+        "stat": 53.3
+    },
+    {
+        "country": "Brazil",
+        "stat": 13.3
+    },
+    {
+        "country": "British Virgin Islands"
+    },
+    {
+        "country": "Brunei",
+        "stat": 10.3
+    },
+    {
+        "country": "Bulgaria",
+        "stat": 10.7
+    },
+    {
+        "country": "Burkina Faso",
+        "stat": 88.6
+    },
+    {
+        "country": "Burundi",
+        "stat": 81.7
+    },
+    {
+        "country": "Cambodia",
+        "stat": 28.7
+    },
+    {
+        "country": "Cameroon",
+        "stat": 88.7
+    },
+    {
+        "country": "Canada",
+        "stat": 4.9
+    },
+    {
+        "country": "Cape Verde",
+        "stat": 24.3
+    },
+    {
+        "country": "Cayman Islands"
+    },
+    {
+        "country": "Central African Republic",
+        "stat": 130.5
+    },
+    {
+        "country": "Chad",
+        "stat": 138.7
+    },
+    {
+        "country": "Channel Islands",
+        "stat": 8.87
+    },
+    {
+        "country": "Chile",
+        "stat": 8.1
+    },
+    {
+        "country": "China",
+        "stat": 10.7
+    },
+    {
+        "country": "Christmas Island"
+    },
+    {
+        "country": "Cocos Island"
+    },
+    {
+        "country": "Colombia",
+        "stat": 15.9
+    },
+    {
+        "country": "Comoros",
+        "stat": 73.5
+    },
+    {
+        "country": "Congo, Dem. Rep.",
+        "stat": 98.3
+    },
+    {
+        "country": "Congo, Rep.",
+        "stat": 45
+    },
+    {
+        "country": "Cook Is",
+        "stat": 8.1
+    },
+    {
+        "country": "Costa Rica",
+        "stat": 9.7
+    },
+    {
+        "country": "Cote d'Ivoire",
+        "stat": 94.4
+    },
+    {
+        "country": "Croatia",
+        "stat": 4.3
+    },
+    {
+        "country": "Cuba",
+        "stat": 5.6
+    },
+    {
+        "country": "Cyprus",
+        "stat": 3.4
+    },
+    {
+        "country": "Czech Republic",
+        "stat": 3.4
+    },
+    {
+        "country": "Czechoslovakia"
+    },
+    {
+        "country": "Denmark",
+        "stat": 3.5
+    },
+    {
+        "country": "Djibouti",
+        "stat": 65.3
+    },
+    {
+        "country": "Dominica",
+        "stat": 21.2
+    },
+    {
+        "country": "Dominican Republic",
+        "stat": 30.9
+    },
+    {
+        "country": "East Germany"
+    },
+    {
+        "country": "Ecuador",
+        "stat": 21.6
+    },
+    {
+        "country": "Egypt",
+        "stat": 24
+    },
+    {
+        "country": "El Salvador",
+        "stat": 16.8
+    },
+    {
+        "country": "Equatorial Guinea",
+        "stat": 94.1
+    },
+    {
+        "country": "Eritrea",
+        "stat": 46.5
+    },
+    {
+        "country": "Eritrea and Ethiopia"
+    },
+    {
+        "country": "Estonia",
+        "stat": 3
+    },
+    {
+        "country": "Ethiopia",
+        "stat": 59.2
+    },
+    {
+        "country": "Faeroe Islands"
+    },
+    {
+        "country": "Falkland Is (Malvinas)"
+    },
+    {
+        "country": "Fiji",
+        "stat": 22.4
+    },
+    {
+        "country": "Finland",
+        "stat": 2.3
+    },
+    {
+        "country": "France",
+        "stat": 4.3
+    },
+    {
+        "country": "French Guiana",
+        "stat": 10.78
+    },
+    {
+        "country": "French Polynesia",
+        "stat": 6.8
+    },
+    {
+        "country": "Gabon",
+        "stat": 52.2
+    },
+    {
+        "country": "Gambia",
+        "stat": 68.9
+    },
+    {
+        "country": "Georgia",
+        "stat": 11.9
+    },
+    {
+        "country": "Germany",
+        "stat": 3.7
+    },
+    {
+        "country": "Ghana",
+        "stat": 61.6
+    },
+    {
+        "country": "Gibraltar"
+    },
+    {
+        "country": "Greece",
+        "stat": 4.1
+    },
+    {
+        "country": "GL, 299"
+    },
+    {
+        "country": "Grenada",
+        "stat": 11.8
+    },
+    {
+        "country": "Guadeloupe",
+        "stat": 5.77
+    },
+    {
+        "country": "Guam",
+        "stat": 10.36
+    },
+    {
+        "country": "Guatemala",
+        "stat": 29.1
+    },
+    {
+        "country": "Guernsey"
+    },
+    {
+        "country": "Guinea",
+        "stat": 93.7
+    },
+    {
+        "country": "Guinea-Bissau",
+        "stat": 92.5
+    },
+    {
+        "country": "Guyana",
+        "stat": 39.4
+    },
+    {
+        "country": "Haiti",
+        "stat": 69
+    },
+    {
+        "country": "Holy See"
+    },
+    {
+        "country": "Honduras",
+        "stat": 20.4
+    },
+    {
+        "country": "Hong Kong, China",
+        "stat": 2.42
+    },
+    {
+        "country": "Hungary",
+        "stat": 6.2
+    },
+    {
+        "country": "Iceland",
+        "stat": 2
+    },
+    {
+        "country": "India",
+        "stat": 47.7
+    },
+    {
+        "country": "Indonesia",
+        "stat": 27.2
+    },
+    {
+        "country": "Iran",
+        "stat": 15.5
+    },
+    {
+        "country": "Iraq",
+        "stat": 32
+    },
+    {
+        "country": "Ireland",
+        "stat": 3.6
+    },
+    {
+        "country": "Isle of Man"
+    },
+    {
+        "country": "Israel",
+        "stat": 4
+    },
+    {
+        "country": "Italy",
+        "stat": 3.4
+    },
+    {
+        "country": "Jamaica",
+        "stat": 15.7
+    },
+    {
+        "country": "Japan",
+        "stat": 2.7
+    },
+    {
+        "country": "Jersey"
+    },
+    {
+        "country": "Jordan",
+        "stat": 17.9
+    },
+    {
+        "country": "Kazakhstan",
+        "stat": 14.1
+    },
+    {
+        "country": "Kenya",
+        "stat": 50.6
+    },
+    {
+        "country": "Kiribati",
+        "stat": 55.9
+    },
+    {
+        "country": "North Korea",
+        "stat": 24.9
+    },
+    {
+        "country": "South Korea",
+        "stat": 3.5
+    },
+    {
+        "country": "United Korea (former)\n"
+    },
+    {
+        "country": "Kuwait",
+        "stat": 8.6
+    },
+    {
+        "country": "Kyrgyz Republic",
+        "stat": 21.3
+    },
+    {
+        "country": "Lao",
+        "stat": 66.7
+    },
+    {
+        "country": "Latvia",
+        "stat": 7.9
+    },
+    {
+        "country": "Lebanon",
+        "stat": 8.3
+    },
+    {
+        "country": "Lesotho",
+        "stat": 97.1
+    },
+    {
+        "country": "Liberia",
+        "stat": 69.9
+    },
+    {
+        "country": "Libya",
+        "stat": 13.4
+    },
+    {
+        "country": "Liechtenstein"
+    },
+    {
+        "country": "Lithuania",
+        "stat": 4
+    },
+    {
+        "country": "Luxembourg",
+        "stat": 1.9
+    },
+    {
+        "country": "Macao, China",
+        "stat": 4.81
+    },
+    {
+        "country": "Macedonia, FYR",
+        "stat": 5.5
+    },
+    {
+        "country": "Madagascar",
+        "stat": 49.6
+    },
+    {
+        "country": "Malawi",
+        "stat": 65.4
+    },
+    {
+        "country": "Malaysia",
+        "stat": 8.2
+    },
+    {
+        "country": "Maldives",
+        "stat": 8.6
+    },
+    {
+        "country": "Mali",
+        "stat": 114.7
+    },
+    {
+        "country": "Malta",
+        "stat": 5.9
+    },
+    {
+        "country": "Marshall Islands",
+        "stat": 36
+    },
+    {
+        "country": "Martinique",
+        "stat": 6.58
+    },
+    {
+        "country": "Mauritania",
+        "stat": 84.7
+    },
+    {
+        "country": "Mauritius",
+        "stat": 13.5
+    },
+    {
+        "country": "Mayotte",
+        "stat": 4.27
+    },
+    {
+        "country": "Mexico",
+        "stat": 13.2
+    },
+    {
+        "country": "Micronesia, Fed. Sts.",
+        "stat": 34.7
+    },
+    {
+        "country": "Moldova",
+        "stat": 15.8
+    },
+    {
+        "country": "Monaco",
+        "stat": 3.5
+    },
+    {
+        "country": "Mongolia",
+        "stat": 22.4
+    },
+    {
+        "country": "Montenegro",
+        "stat": 4.7
+    },
+    {
+        "country": "Montserrat"
+    },
+    {
+        "country": "Morocco",
+        "stat": 27.6
+    },
+    {
+        "country": "Mozambique",
+        "stat": 80.6
+    },
+    {
+        "country": "Myanmar",
+        "stat": 50
+    },
+    {
+        "country": "Namibia",
+        "stat": 46.7
+    },
+    {
+        "country": "Nauru",
+        "stat": 35.4
+    },
+    {
+        "country": "Nepal",
+        "stat": 35.8
+    },
+    {
+        "country": "Netherlands",
+        "stat": 3.8
+    },
+    {
+        "country": "Netherlands Antilles"
+    },
+    {
+        "country": "New Caledonia",
+        "stat": 14.18
+    },
+    {
+        "country": "New Zealand",
+        "stat": 5.7
+    },
+    {
+        "country": "Ngorno-Karabakh"
+    },
+    {
+        "country": "Nicaragua",
+        "stat": 22.1
+    },
+    {
+        "country": "Niger",
+        "stat": 95.5
+    },
+    {
+        "country": "Nigeria",
+        "stat": 108.8
+    },
+    {
+        "country": "Niue",
+        "stat": 23
+    },
+    {
+        "country": "Norfolk Island"
+    },
+    {
+        "country": "Northern Cyprus"
+    },
+    {
+        "country": "Northern Mariana Islands"
+    },
+    {
+        "country": "Norway",
+        "stat": 2.5
+    },
+    {
+        "country": "Oman",
+        "stat": 11.6
+    },
+    {
+        "country": "Pakistan",
+        "stat": 81.1
+    },
+    {
+        "country": "Palau",
+        "stat": 16.4
+    },
+    {
+        "country": "Panama",
+        "stat": 17
+    },
+    {
+        "country": "Papua New Guinea",
+        "stat": 57.3
+    },
+    {
+        "country": "Paraguay",
+        "stat": 20.5
+    },
+    {
+        "country": "Peru",
+        "stat": 16.9
+    },
+    {
+        "country": "Philippines",
+        "stat": 28
+    },
+    {
+        "country": "Pitcairn"
+    },
+    {
+        "country": "Poland",
+        "stat": 5.2
+    },
+    {
+        "country": "Portugal",
+        "stat": 3.6
+    },
+    {
+        "country": "Puerto Rico",
+        "stat": 6.69
+    },
+    {
+        "country": "Qatar",
+        "stat": 7.7
+    },
+    {
+        "country": "Reunion",
+        "stat": 4.28
+    },
+    {
+        "country": "Romania",
+        "stat": 11.1
+    },
+    {
+        "country": "Russia",
+        "stat": 9.6
+    },
+    {
+        "country": "Rwanda",
+        "stat": 42
+    },
+    {
+        "country": "St. Barthélemy"
+    },
+    {
+        "country": "St. Helena"
+    },
+    {
+        "country": "St. Kitts and Nevis",
+        "stat": 10.5
+    },
+    {
+        "country": "St. Lucia",
+        "stat": 14.3
+    },
+    {
+        "country": "St. Martin"
+    },
+    {
+        "country": "St. Vincent and the Grenadines",
+        "stat": 18.3
+    },
+    {
+        "country": "St.-Pierre-et-Miquelon"
+    },
+    {
+        "country": "Samoa",
+        "stat": 17.5
+    },
+    {
+        "country": "San Marino",
+        "stat": 2.9
+    },
+    {
+        "country": "Sao Tome and Principe",
+        "stat": 47.3
+    },
+    {
+        "country": "Saudi Arabia",
+        "stat": 14.5
+    },
+    {
+        "country": "Senegal",
+        "stat": 47.2
+    },
+    {
+        "country": "Serbia",
+        "stat": 6.7
+    },
+    {
+        "country": "Serbia and Montenegro"
+    },
+    {
+        "country": "Serbia excluding Kosovo"
+    },
+    {
+        "country": "Seychelles",
+        "stat": 13.6
+    },
+    {
+        "country": "Sierra Leone",
+        "stat": 120.4
+    },
+    {
+        "country": "Singapore",
+        "stat": 2.7
+    },
+    {
+        "country": "Slovak Republic",
+        "stat": 6.7
+    },
+    {
+        "country": "Slovenia",
+        "stat": 2.7
+    },
+    {
+        "country": "Solomon Islands",
+        "stat": 28.1
+    },
+    {
+        "country": "Somalia",
+        "stat": 136.8
+    },
+    {
+        "country": "Somaliland"
+    },
+    {
+        "country": "South Africa",
+        "stat": 42.1
+    },
+    {
+        "country": "South Ossetia"
+    },
+    {
+        "country": "Spain",
+        "stat": 4.1
+    },
+    {
+        "country": "Sri Lanka",
+        "stat": 8.7
+    },
+    {
+        "country": "Sudan",
+        "stat": 70.1
+    },
+    {
+        "country": "Suriname",
+        "stat": 21.3
+    },
+    {
+        "country": "Svalbard"
+    },
+    {
+        "country": "Swaziland",
+        "stat": 69.6
+    },
+    {
+        "country": "Sweden",
+        "stat": 3
+    },
+    {
+        "country": "Switzerland",
+        "stat": 3.9
+    },
+    {
+        "country": "Syria",
+        "stat": 12.9
+    },
+    {
+        "country": "TW, 34"
+    },
+    {
+        "country": "Tajikistan",
+        "stat": 44.8
+    },
+    {
+        "country": "Tanzania",
+        "stat": 48.4
+    },
+    {
+        "country": "Thailand",
+        "stat": 12.3
+    },
+    {
+        "country": "Timor-Leste",
+        "stat": 52.6
+    },
+    {
+        "country": "Togo",
+        "stat": 78.4
+    },
+    {
+        "country": "Tokelau"
+    },
+    {
+        "country": "Tonga",
+        "stat": 16.7
+    },
+    {
+        "country": "Transnistria"
+    },
+    {
+        "country": "Trinidad and Tobago",
+        "stat": 20.4
+    },
+    {
+        "country": "Tunisia",
+        "stat": 14
+    },
+    {
+        "country": "Turkey",
+        "stat": 13.5
+    },
+    {
+        "country": "Turkmenistan",
+        "stat": 51.4
+    },
+    {
+        "country": "Turks and Caicos Islands"
+    },
+    {
+        "country": "Tuvalu",
+        "stat": 27.1
+    },
+    {
+        "country": "Uganda",
+        "stat": 59.5
+    },
+    {
+        "country": "Ukraine",
+        "stat": 9
+    },
+    {
+        "country": "United Arab Emirates",
+        "stat": 6.8
+    },
+    {
+        "country": "United Kingdom",
+        "stat": 4.2
+    },
+    {
+        "country": "United States",
+        "stat": 6.5
+    },
+    {
+        "country": "Uruguay",
+        "stat": 10.1
+    },
+    {
+        "country": "USSR"
+    },
+    {
+        "country": "Uzbekistan",
+        "stat": 39.1
+    },
+    {
+        "country": "Wallis et Futuna"
+    },
+    {
+        "country": "Vanuatu",
+        "stat": 27.5
+    },
+    {
+        "country": "Venezuela",
+        "stat": 14.9
+    },
+    {
+        "country": "West Bank and Gaza",
+        "stat": 21.1
+    },
+    {
+        "country": "West Germany"
+    },
+    {
+        "country": "Western Sahara",
+        "stat": 41.45
+    },
+    {
+        "country": "Vietnam",
+        "stat": 21.7
+    },
+    {
+        "country": "Virgin Islands (U.S.)",
+        "stat": 10.33
+    },
+    {
+        "country": "North Yemen (former)"
+    },
+    {
+        "country": "South Yemen (former)"
+    },
+    {
+        "country": "Yemen",
+        "stat": 47.5
+    },
+    {
+        "country": "Yugoslavia"
+    },
+    {
+        "country": "Zambia",
+        "stat": 67.8
+    },
+    {
+        "country": "Zimbabwe",
+        "stat": 79.6
+    },
+    {
+        "country": "Åland"
+    },
+    {
+        "country": "South Sudan",
+        "stat": 92.6
+    },
+    {
+        "country": "Curaçao",
+        "stat": 11.33
+    },
+    {
+        "country": "Sint Maarten (Dutch part)"
+    },
+    {
+        "country": "St. Martin (French part)"
+    },
+    {
+        "country": "Antarctica"
+    },
+    {
+        "country": "Bouvet Island"
+    },
+    {
+        "country": "British Indian Ocean Territory"
+    },
+    {
+        "country": "Clipperton"
+    },
+    {
+        "country": "French Southern and Antarctic Lands"
+    },
+    {
+        "country": "Gaza Strip"
+    },
+    {
+        "country": "Heard and McDonald Islands"
+    },
+    {
+        "country": "Northern Marianas"
+    },
+    {
+        "country": "South Georgia and the South Sandwich Islands"
+    },
+    {
+        "country": "US Minor Outlying Islands"
+    },
+    {
+        "country": "Virgin Islands"
+    },
+    {
+        "country": "West Bank"
+    }
+]

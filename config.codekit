@@ -152,6 +152,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/scripts-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/scripts-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/scripts-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/country-codes.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -284,25 +295,25 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/dev\/js\/min\/process-min.js": {
+	"\/dev\/js\/process.js": {
 		"fileType": 64,
 		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/js\/min\/process-min.js",
-		"outputAbbreviatedPath": "\/dev\/js\/min\/min\/process-min-min.js",
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/dev\/js\/process.js",
+		"outputAbbreviatedPath": "\/dev\/js\/min\/process-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/dev\/js\/process.js": {
+	"\/dev\/js\/scripts.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/dev\/js\/process.js",
-		"outputAbbreviatedPath": "\/dev\/js\/min\/process-min.js",
+		"inputAbbreviatedPath": "\/dev\/js\/scripts.js",
+		"outputAbbreviatedPath": "\/assets\/js\/scripts-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
