@@ -80,6 +80,12 @@ $(function(){
       var map = $('#map-2').vectorMap('get', 'mapObject');
       var customTip = $('#customTip');
 
+      var left,top;
+      $('#map-2').vectorMap('get', 'mapObject').container.mousemove(function(e){
+        left = e.pageX - 320;
+        top = e.pageY - 220;
+      });
+
       customTip.css({
                 left: left,
                 top: top
@@ -94,13 +100,7 @@ $(function(){
          // customTip.html('<h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'">Where we work >></a>')
       customTip.show();
     }
-});
-var left,top;
-$('#map-2').vectorMap('get', 'mapObject').container.mousemove(function(e){
-  left = e.pageX - 320;
-  top = e.pageY - 220;
-
-});//end vectorMap
+  });// end vectorMap
 
 });// end function
 
@@ -143,8 +143,34 @@ $(function(){
     onRegionTipShow: function(e, label, index){
       label.html(label.html()+'<br> (GDP - '+physicianData[index]+')');
     },
-    onMarkerTipShow: function(event, label, index){
-      label.html('<h3>'+label.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'">Where we work >></a>');
+    onMarkerTipShow: function(event, tip, index){
+      tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
+      event.preventDefault();
+    },
+    onMarkerClick: function(event, tip, code ) {
+      console.log('You have triggered click');
+      var map = $('#map-4').vectorMap('get', 'mapObject');
+      var customTip = $('#customTip');
+
+      var left,top;
+      $('#map-4').vectorMap('get', 'mapObject').container.mousemove(function(e){
+        left = e.pageX - 320;
+        top = e.pageY - 220;
+      });
+
+      customTip.css({
+                left: left,
+                top: top
+      })
+
+      customTip.html(map.tip.html());
+      customTip.prepend("<button>&#215;</button>");
+      customTip.children("button").click(function(){
+                 customTip.hide();
+      })
+
+      customTip.show();
     }
-  });
-});
+  });// end vectorMap
+
+});// end function
