@@ -1,21 +1,21 @@
 // MENU BAR
-$('.map-menu button').click(function() {
-  $('button').not(this).removeClass("selected");
-  $(this).addClass('selected');
-    if ($(this).attr('id') == 'child-btn') {
-      $('.map-container').children().hide();
-      $('#map-2').fadeIn(800);
-    }
-    else if ($(this).attr('id') == "marriage_btn") {
-      $('.map-container').children().hide();
-      $('#marriage').fadeIn(800);
-    }
+// $('.map-menu button').click(function() {
+//   $('button').not(this).removeClass("selected");
+//   $(this).addClass('selected');
+//     if ($(this).attr('id') == 'child-btn') {
+//       $('.map-container').children().hide();
+//       $('#map-2').fadeIn(800);
+//     }
+//     else if ($(this).attr('id') == "marriage_btn") {
+//       $('.map-container').children().hide();
+//       $('#marriage').fadeIn(800);
+//     }
 
   //toggle all sibling buttons
   //toggleClass this button
 
   //fadeToggle their corresponding map
-});
+// });
 
 
 
@@ -105,7 +105,7 @@ $('#map-2').vectorMap('get', 'mapObject').container.mousemove(function(e){
 });// end function
 
 
-// physicians map
+// Map 4
 $(function(){
   var scope = {};
   scope.bgColor = '#fff';
@@ -115,7 +115,7 @@ $(function(){
   scope.strokeWidth = '0.4';
   scope.markerColor = 'aqua'
 
-  $('#physician-map').vectorMap({
+  $('#map-4').vectorMap({
     map: 'world_mill_en',
     backgroundColor: scope.bgColor,
     zoomOnScroll: false,
@@ -141,7 +141,7 @@ $(function(){
       }]
     },
     onRegionTipShow: function(e, label, index){
-      label.html(label.html()+'<br> (GDP - '+physicianResult[index]+')');
+      label.html(label.html()+'<br> (GDP - '+physicianData[index]+')');
     },
     onMarkerTipShow: function(event, label, index){
       label.html('<h3>'+label.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'">Where we work >></a>');
