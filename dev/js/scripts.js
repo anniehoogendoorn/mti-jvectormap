@@ -1,21 +1,21 @@
 // MENU BAR
-// $('.map-menu button').click(function() {
-//   $('button').not(this).removeClass("selected");
-//   $(this).addClass('selected');
-//     if ($(this).attr('id') == 'child-btn') {
-//       $('.map-container').children().hide();
-//       $('#map-2').fadeIn(800);
-//     }
-//     else if ($(this).attr('id') == "marriage_btn") {
-//       $('.map-container').children().hide();
-//       $('#marriage').fadeIn(800);
-//     }
+$('.map-menu button').click(function() {
+  $('button').not(this).removeClass("selected");
+  $(this).addClass('selected');
+    if ($(this).attr('id') == 'child-btn') {
+      $('.map-container').children().hide();
+      $('#map-2').fadeIn(800);
+    }
+    else if ($(this).attr('id') == "marriage_btn") {
+      $('.map-container').children().hide();
+      $('#marriage').fadeIn(800);
+    }
 
-  //toggle all sibling buttons
-  //toggleClass this button
+  toggle all sibling buttons
+  toggleClass this button
 
-  //fadeToggle their corresponding map
-// });
+  fadeToggle their corresponding map
+});
 
 
 
