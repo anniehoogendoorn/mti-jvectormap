@@ -3,13 +3,13 @@ $('.map-menu button').click(function() {
   $('button').not(this).removeClass("selected");
   $(this).addClass('selected');
     if ($(this).attr('id') == 'btn-2') {
-      $('.map-container').children().hide();
-      $('#map-2').fadeIn(800);
+      $('.maps-container').children().hide();
+      $('#map2-container').fadeIn(800);
     }
-    else if ($(this).attr('id') == "btn-4") {
-      $('.map-container').children().hide();
-      $('#map-4').fadeIn(800);
-    }
+    // else if ($(this).attr('id') == "btn-4") {
+    //   $('.maps-container').children().hide();
+    //   $('#map-4').fadeIn(800);
+    // }
 
   // toggle all sibling buttons
   // toggleClass this button

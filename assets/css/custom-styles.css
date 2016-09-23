@@ -49,7 +49,7 @@ button.selected {
 /* MAPS */
 
 
-.map-container  {
+.maps-container  {
   /*width: 100%;
   height: 100%;*/
   margin: 0 auto;
@@ -70,11 +70,11 @@ button.selected {
 
 }
 
-#map-2 {
+#map2-container {
   /*display: none;*/
 }
 
-#map-4 {
+#map4-container {
   display: none;
 }
 
