@@ -65,18 +65,17 @@ button.selected {
   max-height: 600px;
 }
 
-#map-1 {
+/*#map1-container {
   display: none;
-
-}
+}*/
 
 #map2-container {
   /*display: none;*/
 }
 
-#map4-container {
+/*#map4-container {
   display: none;
-}
+}*/
 
 
 

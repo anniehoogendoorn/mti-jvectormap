@@ -2,14 +2,88 @@
 $('.map-menu button').click(function() {
   $('button').not(this).removeClass("selected");
   $(this).addClass('selected');
-    if ($(this).attr('id') == 'btn-2') {
+    if ($(this).attr('id') == 'btn2') {
       $('.maps-container').children().hide();
+
       $('#map2-container').fadeIn(800);
+    else if ($(this).attr('id') == "btn4") {
+      // $('.maps-container').children().hide();
+      $('#map2-container').hide();
+      console.log("bt4 clicked");
+      // Map 4
+      $(function(){
+        var scope = {};
+        scope.bgColor = '#fff';
+        scope.scaleColors = ['#fbf0f1','#cb333b'];
+        scope.fillColor = '#e7e7e9';
+        scope.strokeColor = '#fff';
+        scope.strokeWidth = '0.4';
+        scope.markerColor = 'aqua'
+
+        $('#map4').vectorMap({
+          map: 'world_mill_en',
+          backgroundColor: scope.bgColor,
+          zoomOnScroll: false,
+          regionStyle: {
+            initial: {
+              fill: scope.fillColor,
+              stroke: scope.strokeColor,
+              "stroke-width": scope.strokeWidth
+            }
+          },
+          markers: markers,
+          markerStyle: {
+                  initial: {
+                    fill: scope.markerColor,
+                    stroke: scope.strokeColor
+                  }
+                },
+          series: {
+            regions: [{
+              values: physicianData,
+              scale: scope.scaleColors,
+              normalizeFunction: 'polynomial'
+            }]
+          },
+          onRegionTipShow: function(e, label, index){
+            label.html(label.html()+'<br> (GDP - '+physicianData[index]+')');
+          },
+          onMarkerTipShow: function(event, tip, index){
+            tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
+            event.preventDefault();
+          },
+          onMarkerClick: function(event, tip, code ) {
+            console.log('You have triggered click');
+            var map = $('#map4').vectorMap('get', 'mapObject');
+            var customTip = $('#customTip');
+
+            var left,top;
+            $('#map4').vectorMap('get', 'mapObject').container.mousemove(function(e){
+              left = e.pageX - 320;
+              top = e.pageY - 220;
+            });
+
+            customTip.css({
+                      left: left,
+                      top: top
+            })
+
+            customTip.html(map.tip.html());
+            customTip.prepend("<button>&#215;</button>");
+            customTip.children("button").click(function(){
+                       customTip.hide();
+            })
+
+            customTip.show();
+          }
+        });// end vectorMap
+
+      });// end function
+
+
+      // $('#map4-container').fadeIn(800);
+
     }
-    // else if ($(this).attr('id') == "btn-4") {
-    //   $('.maps-container').children().hide();
-    //   $('#map-4').fadeIn(800);
-    // }
 
   // toggle all sibling buttons
   // toggleClass this button
@@ -32,7 +106,7 @@ $(function(){
   scope.strokeWidth = '0.4';
   scope.markerColor = '#21ACDE'
 
-  $('#map-2').vectorMap({
+  $('#map2').vectorMap({
     map: 'world_mill_en',
     backgroundColor: scope.bgColor,
     zoomOnScroll: false,
@@ -77,11 +151,11 @@ $(function(){
     },
     onMarkerClick: function(event, tip, code ) {
       console.log('You have triggered click');
-      var map = $('#map-2').vectorMap('get', 'mapObject');
+      var map = $('#map2').vectorMap('get', 'mapObject');
       var customTip = $('#customTip');
 
       var left,top;
-      $('#map-2').vectorMap('get', 'mapObject').container.mousemove(function(e){
+      $('#map2').vectorMap('get', 'mapObject').container.mousemove(function(e){
         left = e.pageX - 320;
         top = e.pageY - 220;
       });
@@ -105,72 +179,72 @@ $(function(){
 });// end function
 
 
-// Map 4
-$(function(){
-  var scope = {};
-  scope.bgColor = '#fff';
-  scope.scaleColors = ['#fbf0f1','#cb333b'];
-  scope.fillColor = '#e7e7e9';
-  scope.strokeColor = '#fff';
-  scope.strokeWidth = '0.4';
-  scope.markerColor = 'aqua'
-
-  $('#map-4').vectorMap({
-    map: 'world_mill_en',
-    backgroundColor: scope.bgColor,
-    zoomOnScroll: false,
-    regionStyle: {
-      initial: {
-        fill: scope.fillColor,
-        stroke: scope.strokeColor,
-        "stroke-width": scope.strokeWidth
-      }
-    },
-    markers: markers,
-    markerStyle: {
-            initial: {
-              fill: scope.markerColor,
-              stroke: scope.strokeColor
-            }
-          },
-    series: {
-      regions: [{
-        values: physicianData,
-        scale: scope.scaleColors,
-        normalizeFunction: 'polynomial'
-      }]
-    },
-    onRegionTipShow: function(e, label, index){
-      label.html(label.html()+'<br> (GDP - '+physicianData[index]+')');
-    },
-    onMarkerTipShow: function(event, tip, index){
-      tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
-      event.preventDefault();
-    },
-    onMarkerClick: function(event, tip, code ) {
-      console.log('You have triggered click');
-      var map = $('#map-4').vectorMap('get', 'mapObject');
-      var customTip = $('#customTip');
-
-      var left,top;
-      $('#map-4').vectorMap('get', 'mapObject').container.mousemove(function(e){
-        left = e.pageX - 320;
-        top = e.pageY - 220;
-      });
-
-      customTip.css({
-                left: left,
-                top: top
-      })
-
-      customTip.html(map.tip.html());
-      customTip.prepend("<button>&#215;</button>");
-      customTip.children("button").click(function(){
-                 customTip.hide();
-      })
-
-      customTip.show();
-    }
-  });// end vectorMap
-
-});// end function
+// // Map 4
+// $(function(){
+//   var scope = {};
+//   scope.bgColor = '#fff';
+//   scope.scaleColors = ['#fbf0f1','#cb333b'];
+//   scope.fillColor = '#e7e7e9';
+//   scope.strokeColor = '#fff';
+//   scope.strokeWidth = '0.4';
+//   scope.markerColor = 'aqua'
+//
+//   $('#map4').vectorMap({
+//     map: 'world_mill_en',
+//     backgroundColor: scope.bgColor,
+//     zoomOnScroll: false,
+//     regionStyle: {
+//       initial: {
+//         fill: scope.fillColor,
+//         stroke: scope.strokeColor,
+//         "stroke-width": scope.strokeWidth
+//       }
+//     },
+//     markers: markers,
+//     markerStyle: {
+//             initial: {
+//               fill: scope.markerColor,
+//               stroke: scope.strokeColor
+//             }
+//           },
+//     series: {
+//       regions: [{
+//         values: physicianData,
+//         scale: scope.scaleColors,
+//         normalizeFunction: 'polynomial'
+//       }]
+//     },
+//     onRegionTipShow: function(e, label, index){
+//       label.html(label.html()+'<br> (GDP - '+physicianData[index]+')');
+//     },
+//     onMarkerTipShow: function(event, tip, index){
+//       tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
+//       event.preventDefault();
+//     },
+//     onMarkerClick: function(event, tip, code ) {
+//       console.log('You have triggered click');
+//       var map = $('#map4').vectorMap('get', 'mapObject');
+//       var customTip = $('#customTip');
+//
+//       var left,top;
+//       $('#map4').vectorMap('get', 'mapObject').container.mousemove(function(e){
+//         left = e.pageX - 320;
+//         top = e.pageY - 220;
+//       });
+//
+//       customTip.css({
+//                 left: left,
+//                 top: top
+//       })
+//
+//       customTip.html(map.tip.html());
+//       customTip.prepend("<button>&#215;</button>");
+//       customTip.children("button").click(function(){
+//                  customTip.hide();
+//       })
+//
+//       customTip.show();
+//     }
+//   });// end vectorMap
+//
+// });// end function
