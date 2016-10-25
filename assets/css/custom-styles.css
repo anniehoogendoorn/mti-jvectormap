@@ -73,13 +73,51 @@ button.selected {
   /*display: none;*/
 }
 
-/*#map4-container {
-  display: none;
-}*/
 
 
 
 /* Marker animation */
+
+/*.pulse {
+  transition:  3s ease-out;
+  transform-origin: 50% 50%;
+
+}*/
+
+/*.pulse:hover {
+  fill: blue;
+  r: 8;
+}*/
+
+/*g:hover .pulse {
+  transform: scale(5);
+  fill: blue;
+  r: 8;
+}*/
+
+@keyframes svg_pulse {
+  0% {
+    stroke-width: 8;
+    stroke-opacity: .9;
+  }
+  30% {
+    stroke-opacity: .1;
+  }
+  60% {
+    stroke-width: 0.2;
+    stroke-opacity: 1;
+  }
+}
+
+.pulse {
+  animation: svg_pulse 1.5s ease;
+  animation-iteration-count: infinite;
+}
+
+.pulse:hover {
+  animation-play-state: paused;
+  r: 8;
+}
 
 /*@-webkit-keyframes svg_pulse {
      0% {
@@ -102,6 +140,8 @@ button.selected {
     -webkit-animation: svg_pulse 3s ease;
     -webkit-animation-iteration-count: infinite;
 }*/
+
+
 /*Custom Tip Info Window*/
 image {
   /*width: -15px;*/

@@ -6,6 +6,7 @@ $('.map-menu button').click(function() {
       $('.maps-container').children().hide();
 
       $('#map2-container').fadeIn(800);
+    }
     else if ($(this).attr('id') == "btn4") {
       // $('.maps-container').children().hide();
       $('#map2-container').hide();
@@ -18,7 +19,7 @@ $('.map-menu button').click(function() {
         scope.fillColor = '#e7e7e9';
         scope.strokeColor = '#fff';
         scope.strokeWidth = '0.4';
-        scope.markerColor = 'aqua'
+        scope.markerColor = '#21ACDE';
 
         $('#map4').vectorMap({
           map: 'world_mill_en',
@@ -29,13 +30,17 @@ $('.map-menu button').click(function() {
               fill: scope.fillColor,
               stroke: scope.strokeColor,
               "stroke-width": scope.strokeWidth
+            },
+            hover: {
+              "fill-opacity": 0.8,
+              cursor: 'pointer'
             }
           },
           markers: markers,
           markerStyle: {
                   initial: {
                     fill: scope.markerColor,
-                    stroke: scope.strokeColor
+                    stroke: scope.markerColor
                   }
                 },
           series: {
@@ -104,7 +109,9 @@ $(function(){
   scope.fillColor = '#e7e7e9';
   scope.strokeColor = '#fff';
   scope.strokeWidth = '0.4';
-  scope.markerColor = '#21ACDE'
+  scope.markerColor = '#21ACDE';
+  // scope.markerStrokeColor = '#88d3ed';
+  scope.markerStrokeColor = '#1a8ab2';
 
   $('#map2').vectorMap({
     map: 'world_mill_en',
@@ -120,11 +127,17 @@ $(function(){
     markers: markers,
     markerStyle: {
       initial: {
-        r: 8,
+        r: 5,
         fill: scope.markerColor,
-        stroke: scope.strokeColor
+        stroke: scope.markerStrokeColor
         // image: 'marker4.png'
       },
+      hover: {
+        "fill-opacity": 0.8,
+        stroke: scope.strokeColor,
+        cursor: 'pointer'
+      },
+
     },
     series: {
       regions: [{
