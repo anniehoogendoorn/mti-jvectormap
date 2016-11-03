@@ -1,7 +1,16 @@
 /* GENERAL */
+
 body {
   font-family: "purista-web-n4","purista-web", Arial, Helvetica, sans-serif;
   margin-top: 50px;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 0;
 }
 
 p {
@@ -23,16 +32,46 @@ a {
 /* MENU BAR */
 
 .map-menu {
-  /*width: 900px;*/
+  max-width: 912px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
+
 button {
+  flex-grow: 1;
   background: #f0f0f1;
   padding: 8px 20px;
   border: 1px solid #ccc;
   margin-right: -5px;
   font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 630px) {
+  button {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 475px) {
+  .map-menu {
+    flex-wrap: wrap;
+  }
+  button {
+    width: 100%;
+    border-bottom: none;
+  }
+  button:last-of-type {
+    border-bottom: 1px solid #ccc;
+  }
 }
 
 button:focus {
@@ -48,12 +87,11 @@ button.selected {
 
 /* MAPS */
 
-
 .maps-container  {
   /*width: 100%;
   height: 100%;*/
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 912px;
   max-height: 600px;
 }
 
@@ -74,30 +112,11 @@ button.selected {
 }
 
 
-
-
 /* Marker animation */
-
-/*.pulse {
-  transition:  3s ease-out;
-  transform-origin: 50% 50%;
-
-}*/
-
-/*.pulse:hover {
-  fill: blue;
-  r: 8;
-}*/
-
-/*g:hover .pulse {
-  transform: scale(5);
-  fill: blue;
-  r: 8;
-}*/
 
 @keyframes svg_pulse {
   0% {
-    stroke-width: 8;
+    stroke-width: 15;
     stroke-opacity: .9;
   }
   30% {
@@ -110,39 +129,18 @@ button.selected {
 }
 
 .pulse {
-  animation: svg_pulse 1.5s ease;
+  animation: svg_pulse 5s ease;
   animation-iteration-count: infinite;
 }
 
-.pulse:hover {
+.pulse:hover, .pulse:clicked {
   animation-play-state: paused;
   r: 8;
 }
 
-/*@-webkit-keyframes svg_pulse {
-     0% {
-        -webkit-transform: matrix(1,0,01,0,0);
-        stroke-width: 1;
-        opacity: 1;
-     }
-
-     50% {
-        opacity: 1;
-     }
-     100% {
-        -webkit-transform: matrix(4,0,0,4,-120,-120);
-        stroke-width: 0.25;
-        opacity: 0;
-     }
-}
-
-.pulse {
-    -webkit-animation: svg_pulse 3s ease;
-    -webkit-animation-iteration-count: infinite;
-}*/
-
 
 /*Custom Tip Info Window*/
+
 image {
   /*width: -15px;*/
   height: 22px;
@@ -153,8 +151,7 @@ image {
 #customTip {
   display: none;
   padding: 10px 15px 25px;
-  line-height: 1.438em;
-  /*line-height: 23px;*/
+  line-height: 23px;
   max-width: 250px;
 }
 #customTip button {
@@ -164,7 +161,6 @@ image {
   font-weight: 400;
   background: #fff;
   border: none;
-  /*margin-top: 5px;*/
   padding-right: 0;
 }
 
@@ -186,7 +182,7 @@ image {
     color: #53564A;
     font-family: sans-serif, Verdana;
     font-size: smaller;
-    /*padding: 0 15px 15px;*/
+    padding: 0 15px 15px;
     margin: -10px;
     /*overflow: hidden;*/
 }
@@ -195,6 +191,8 @@ image {
   text-decoration: none;
   color: #21ACDE;
 }
+
+
 
 
 /*div.info-window {
