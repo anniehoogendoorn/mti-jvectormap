@@ -7,7 +7,7 @@
 		"uuidString": "EA05BB06-23E4-45FF-B0B9-89EB5115C491"
 		}
 	],
-"creatorBuild": "25428",
+"creatorBuild": "25444",
 "files": {
 	"\/assets\/css\/custom-styles.css": {
 		"aP": 0,
@@ -160,11 +160,35 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/dev\/data-input\/battle-deaths.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/dev\/data-input\/battle-deaths-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/dev\/data-input\/births.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/dev\/data-input\/births-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/dev\/data-input\/csv\/mortality_data.csv": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/dev\/data-input\/csv\/mortality_data.csv",
 		"oF": 0
+		},
+	"\/dev\/data-input\/maternal-mortality.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/dev\/data-input\/maternal-mortality-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"\/dev\/data-input\/mortality.json": {
 		"ft": 524288,
@@ -190,12 +214,48 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/dev\/data-output\/births-data.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dev\/data-output\/min\/births-data-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/dev\/data-output\/gdp-data.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/assets\/data\/gdp-data-min.js",
 		"oF": 2,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dev\/data-output\/maternal-data.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dev\/data-output\/min\/maternal-data-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dev\/data-output\/min\/births-data-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dev\/data-output\/min\/min\/births-data-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dev\/data-output\/min\/maternal-mortality-data-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dev\/data-output\/min\/min\/maternal-mortality-data-min-min.js",
+		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},

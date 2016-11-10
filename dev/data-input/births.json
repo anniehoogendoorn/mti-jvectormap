@@ -1,0 +1,663 @@
+[
+    {
+        "country": "Afghanistan"
+    },
+    {
+        "country": "Albania"
+    },
+    {
+        "country": "Algeria"
+    },
+    {
+        "country": "American Samoa"
+    },
+    {
+        "country": "Andorra"
+    },
+    {
+        "country": "Angola"
+    },
+    {
+        "country": "Antigua and Barbuda"
+    },
+    {
+        "country": "Argentina"
+    },
+    {
+        "country": "Armenia",
+        "stat": 99.5
+    },
+    {
+        "country": "Aruba"
+    },
+    {
+        "country": "Australia"
+    },
+    {
+        "country": "Austria"
+    },
+    {
+        "country": "Azerbaijan"
+    },
+    {
+        "country": "Bahamas"
+    },
+    {
+        "country": "Bahrain"
+    },
+    {
+        "country": "Bangladesh",
+        "stat": 26.5
+    },
+    {
+        "country": "Barbados"
+    },
+    {
+        "country": "Belarus"
+    },
+    {
+        "country": "Belgium"
+    },
+    {
+        "country": "Belize"
+    },
+    {
+        "country": "Benin"
+    },
+    {
+        "country": "Bermuda"
+    },
+    {
+        "country": "Bhutan",
+        "stat": 64.5
+    },
+    {
+        "country": "Bolivia"
+    },
+    {
+        "country": "Bosnia and Herzegovina"
+    },
+    {
+        "country": "Botswana"
+    },
+    {
+        "country": "Brazil"
+    },
+    {
+        "country": "Brunei"
+    },
+    {
+        "country": "Bulgaria"
+    },
+    {
+        "country": "Burkina Faso"
+    },
+    {
+        "country": "Burundi",
+        "stat": 60.3
+    },
+    {
+        "country": "Cambodia",
+        "stat": 71
+    },
+    {
+        "country": "Cameroon"
+    },
+    {
+        "country": "Canada"
+    },
+    {
+        "country": "Cape Verde"
+    },
+    {
+        "country": "Cayman Islands"
+    },
+    {
+        "country": "Central African Rep."
+    },
+    {
+        "country": "Chad",
+        "stat": 22.6
+    },
+    {
+        "country": "Channel Islands"
+    },
+    {
+        "country": "Chile"
+    },
+    {
+        "country": "China"
+    },
+    {
+        "country": "Colombia",
+        "stat": 97.7
+    },
+    {
+        "country": "Comoros"
+    },
+    {
+        "country": "Congo, Dem. Rep.",
+        "stat": 79.3
+    },
+    {
+        "country": "Congo, Rep."
+    },
+    {
+        "country": "Costa Rica",
+        "stat": 99.26
+    },
+    {
+        "country": "Cote d'Ivoire"
+    },
+    {
+        "country": "Croatia",
+        "stat": 100
+    },
+    {
+        "country": "Cuba",
+        "stat": 99.9
+    },
+    {
+        "country": "Cyprus"
+    },
+    {
+        "country": "Czech Rep."
+    },
+    {
+        "country": "Denmark"
+    },
+    {
+        "country": "Djibouti"
+    },
+    {
+        "country": "Dominica"
+    },
+    {
+        "country": "Dominican Rep."
+    },
+    {
+        "country": "Ecuador"
+    },
+    {
+        "country": "Egypt"
+    },
+    {
+        "country": "El Salvador"
+    },
+    {
+        "country": "Equatorial Guinea"
+    },
+    {
+        "country": "Eritrea"
+    },
+    {
+        "country": "Estonia"
+    },
+    {
+        "country": "Ethiopia"
+    },
+    {
+        "country": "Faeroe Islands"
+    },
+    {
+        "country": "Fiji"
+    },
+    {
+        "country": "Finland"
+    },
+    {
+        "country": "France"
+    },
+    {
+        "country": "French Polynesia"
+    },
+    {
+        "country": "Gabon"
+    },
+    {
+        "country": "Gambia",
+        "stat": 56.7
+    },
+    {
+        "country": "Georgia"
+    },
+    {
+        "country": "Germany"
+    },
+    {
+        "country": "Ghana"
+    },
+    {
+        "country": "Gibraltar"
+    },
+    {
+        "country": "Greece"
+    },
+    {
+        "country": "Greenland"
+    },
+    {
+        "country": "Grenada"
+    },
+    {
+        "country": "Guam"
+    },
+    {
+        "country": "Guatemala"
+    },
+    {
+        "country": "Guinea"
+    },
+    {
+        "country": "Guinea-Bissau",
+        "stat": 44
+    },
+    {
+        "country": "Guyana"
+    },
+    {
+        "country": "Haiti"
+    },
+    {
+        "country": "Honduras"
+    },
+    {
+        "country": "Hong Kong, China"
+    },
+    {
+        "country": "Hungary"
+    },
+    {
+        "country": "Iceland"
+    },
+    {
+        "country": "India"
+    },
+    {
+        "country": "Indonesia",
+        "stat": 82.2
+    },
+    {
+        "country": "Iran"
+    },
+    {
+        "country": "Iraq"
+    },
+    {
+        "country": "Ireland"
+    },
+    {
+        "country": "Isle of Man"
+    },
+    {
+        "country": "Israel"
+    },
+    {
+        "country": "Italy"
+    },
+    {
+        "country": "Jamaica"
+    },
+    {
+        "country": "Japan"
+    },
+    {
+        "country": "Jordan"
+    },
+    {
+        "country": "Kazakhstan"
+    },
+    {
+        "country": "Kenya"
+    },
+    {
+        "country": "Kiribati"
+    },
+    {
+        "country": "Korea, Dem. Rep."
+    },
+    {
+        "country": "Korea, Rep."
+    },
+    {
+        "country": "Kosovo"
+    },
+    {
+        "country": "Kuwait"
+    },
+    {
+        "country": "Kyrgyzstan"
+    },
+    {
+        "country": "Laos",
+        "stat": 37
+    },
+    {
+        "country": "Latvia"
+    },
+    {
+        "country": "Lebanon"
+    },
+    {
+        "country": "Lesotho"
+    },
+    {
+        "country": "Liberia"
+    },
+    {
+        "country": "Libya"
+    },
+    {
+        "country": "Liechtenstein"
+    },
+    {
+        "country": "Lithuania"
+    },
+    {
+        "country": "Luxembourg"
+    },
+    {
+        "country": "Macao, China"
+    },
+    {
+        "country": "Macedonia, FYR"
+    },
+    {
+        "country": "Madagascar"
+    },
+    {
+        "country": "Malawi"
+    },
+    {
+        "country": "Malaysia"
+    },
+    {
+        "country": "Maldives"
+    },
+    {
+        "country": "Mali"
+    },
+    {
+        "country": "Malta"
+    },
+    {
+        "country": "Marshall Islands"
+    },
+    {
+        "country": "Mauritania"
+    },
+    {
+        "country": "Mauritius"
+    },
+    {
+        "country": "Mayotte"
+    },
+    {
+        "country": "Mexico"
+    },
+    {
+        "country": "Micronesia, Fed. Sts."
+    },
+    {
+        "country": "Moldova"
+    },
+    {
+        "country": "Monaco"
+    },
+    {
+        "country": "Mongolia",
+        "stat": 99.8
+    },
+    {
+        "country": "Montenegro"
+    },
+    {
+        "country": "Morocco"
+    },
+    {
+        "country": "Mozambique"
+    },
+    {
+        "country": "Myanmar"
+    },
+    {
+        "country": "Namibia"
+    },
+    {
+        "country": "Nepal"
+    },
+    {
+        "country": "Netherlands"
+    },
+    {
+        "country": "New Caledonia"
+    },
+    {
+        "country": "New Zealand"
+    },
+    {
+        "country": "Nicaragua"
+    },
+    {
+        "country": "Niger"
+    },
+    {
+        "country": "Nigeria"
+    },
+    {
+        "country": "Northern Mariana Islands"
+    },
+    {
+        "country": "Norway"
+    },
+    {
+        "country": "Oman"
+    },
+    {
+        "country": "Pakistan"
+    },
+    {
+        "country": "Palau"
+    },
+    {
+        "country": "Panama"
+    },
+    {
+        "country": "Papua New Guinea"
+    },
+    {
+        "country": "Paraguay"
+    },
+    {
+        "country": "Peru",
+        "stat": 83.8
+    },
+    {
+        "country": "Philippines"
+    },
+    {
+        "country": "Poland"
+    },
+    {
+        "country": "Portugal"
+    },
+    {
+        "country": "Puerto Rico"
+    },
+    {
+        "country": "Qatar"
+    },
+    {
+        "country": "Romania"
+    },
+    {
+        "country": "Russia"
+    },
+    {
+        "country": "Rwanda",
+        "stat": 69
+    },
+    {
+        "country": "Saint Kitts and Nevis"
+    },
+    {
+        "country": "Saint Lucia"
+    },
+    {
+        "country": "Saint Martin"
+    },
+    {
+        "country": "Saint Vincent and the Grenadines"
+    },
+    {
+        "country": "Samoa"
+    },
+    {
+        "country": "San Marino"
+    },
+    {
+        "country": "Sao Tome and Principe"
+    },
+    {
+        "country": "Saudi Arabia"
+    },
+    {
+        "country": "Senegal"
+    },
+    {
+        "country": "Serbia"
+    },
+    {
+        "country": "Seychelles"
+    },
+    {
+        "country": "Sierra Leone"
+    },
+    {
+        "country": "Singapore"
+    },
+    {
+        "country": "Slovak Republic"
+    },
+    {
+        "country": "Slovenia"
+    },
+    {
+        "country": "Solomon Islands"
+    },
+    {
+        "country": "Somalia"
+    },
+    {
+        "country": "South Africa"
+    },
+    {
+        "country": "Spain"
+    },
+    {
+        "country": "Sri Lanka"
+    },
+    {
+        "country": "Sudan"
+    },
+    {
+        "country": "Suriname"
+    },
+    {
+        "country": "Swaziland",
+        "stat": 82
+    },
+    {
+        "country": "Sweden"
+    },
+    {
+        "country": "Switzerland"
+    },
+    {
+        "country": "Syria"
+    },
+    {
+        "country": "Tajikistan"
+    },
+    {
+        "country": "Tanzania",
+        "stat": 48.9
+    },
+    {
+        "country": "Thailand"
+    },
+    {
+        "country": "Timor-Leste",
+        "stat": 29.3
+    },
+    {
+        "country": "Togo",
+        "stat": 60.1
+    },
+    {
+        "country": "Tonga"
+    },
+    {
+        "country": "Trinidad and Tobago"
+    },
+    {
+        "country": "Tunisia"
+    },
+    {
+        "country": "Turkey"
+    },
+    {
+        "country": "Turkmenistan"
+    },
+    {
+        "country": "Turks and Caicos Islands"
+    },
+    {
+        "country": "Tuvalu"
+    },
+    {
+        "country": "Uganda"
+    },
+    {
+        "country": "Ukraine"
+    },
+    {
+        "country": "United Arab Emirates"
+    },
+    {
+        "country": "United Kingdom"
+    },
+    {
+        "country": "United States"
+    },
+    {
+        "country": "Uruguay"
+    },
+    {
+        "country": "Uzbekistan"
+    },
+    {
+        "country": "Vanuatu"
+    },
+    {
+        "country": "Venezuela"
+    },
+    {
+        "country": "Vietnam"
+    },
+    {
+        "country": "Virgin Islands (U.S.)"
+    },
+    {
+        "country": "West Bank and Gaza"
+    },
+    {
+        "country": "Yemen, Rep."
+    },
+    {
+        "country": "Zambia"
+    },
+    {
+        "country": "Zimbabwe"
+    }
+]
