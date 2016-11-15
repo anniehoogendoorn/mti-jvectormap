@@ -3,8 +3,8 @@
 // Add click to button 1 on load
 $(document).ready(function() {
   $('.map-menu button#btn2').trigger('click');
-
 });
+
 // $('.maps-container:not(.pulse) ').click(function() {
 //   $('#customTip').hide();
 // })
@@ -18,7 +18,6 @@ $('.map-menu button').click(function() {
     $('.maps-container > div:not(#map1-container)').hide();
     $('#map1-container').fadeIn(800);
 
-    //map 1
   }
 
   else if ($(this).attr('id') === 'btn2') {
@@ -50,6 +49,9 @@ $('.map-menu button').click(function() {
 
 
 // JVECTORMAPS API
+
+// Map 1
+
 
 // Map 2
 $(function(){

@@ -29,11 +29,29 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/assets\/data\/births-data-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/data\/min\/births-data-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/assets\/data\/gdp-data-min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/assets\/data\/min\/gdp-data-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/data\/maternal-data-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/data\/min\/maternal-data-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -160,10 +178,10 @@
 		"oO": 0,
 		"oS": 1
 		},
-	"\/dev\/data-input\/battle-deaths.json": {
+	"\/dev\/data-input\/battle.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "\/dev\/data-input\/battle-deaths-min.json",
+		"oAP": "\/dev\/data-input\/battle-min.json",
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
@@ -218,8 +236,8 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/dev\/data-output\/min\/births-data-min.js",
-		"oF": 0,
+		"oAP": "\/assets\/data\/births-data-min.js",
+		"oF": 2,
 		"sC": 1,
 		"tS": 0
 		},
@@ -236,8 +254,8 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/dev\/data-output\/min\/maternal-data-min.js",
-		"oF": 0,
+		"oAP": "\/assets\/data\/maternal-data-min.js",
+		"oF": 2,
 		"sC": 1,
 		"tS": 0
 		},
