@@ -59,7 +59,7 @@ function processData(jsonData, result) {
 // var maternal_json = JSON.stringify(maternalMortalityResult);
 // console.log(maternal_json);
 
-processData("dev/data-input/battle-deaths.json", battleDeathsResult);
-alert(battleDeathsResult.toSource());
-var battle_json = JSON.stringify(battleDeathsResult);
+processData("dev/data-input/battle.json", battleResult);
+alert(battleResult.toSource());
+var battle_json = JSON.stringify(battleResult);
 console.log(battle_json);
