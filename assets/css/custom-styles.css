@@ -5,8 +5,13 @@ body {
   margin-top: 50px;
 }
 
-h1, h3 {
+h1 {
   text-align: center;
+}
+
+.map .title, .map p.sub-title {
+  text-align: center;
+  font-weight: normal;
 }
 
 h3 {
