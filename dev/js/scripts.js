@@ -17,7 +17,7 @@ $('.map-menu button').click(function() {
   if ($(this).attr('id') === 'btn1') {
     $('.maps-container > div:not(#map1-container)').hide();
     $('#map1-container').fadeIn(800);
-
+    $('#map1').vectorMap('get','mapObject').updateSize();
   }
 
   else if ($(this).attr('id') === 'btn2') {
