@@ -2,7 +2,7 @@
 
 // Add click to button 1 on load
 $(document).ready(function() {
-  // $('.map-menu button#btn2').trigger('click');
+  $('.map-menu button#btn1').trigger('click');
 });
 
 // $('.maps-container:not(.pulse) ').click(function() {
