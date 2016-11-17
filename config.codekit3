@@ -14,7 +14,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/assets\/css\/custom-styles-ck.css",
 		"oF": 0,
 		"oS": 0
@@ -24,7 +24,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/assets\/css\/jquery-jvectormap-2.0.3-ck.css",
 		"oF": 0,
 		"oS": 0
@@ -164,7 +164,7 @@
 	"\/assets\/js\/scripts-min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/assets\/js\/min\/scripts-min-min.js",
 		"oF": 0,
 		"sC": 1,
@@ -236,8 +236,8 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/assets\/data\/births-data-min.js",
-		"oF": 2,
+		"oAP": "\/dev\/data-output\/min\/births-data-min.js",
+		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
@@ -254,8 +254,8 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/assets\/data\/maternal-data-min.js",
-		"oF": 2,
+		"oAP": "\/dev\/data-output\/min\/maternal-data-min.js",
+		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
@@ -343,9 +343,9 @@
 	"\/dev\/js\/process.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/dev\/js\/min\/process-min.js",
-		"oF": 1,
+		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
@@ -355,12 +355,12 @@
 		"oA": 0,
 		"oAP": "\/assets\/js\/scripts-min.js",
 		"oF": 2,
-		"sC": 1,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/index.html",
 		"oF": 0
 		}

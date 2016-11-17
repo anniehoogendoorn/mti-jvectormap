@@ -2,7 +2,7 @@
 
 // Add click to button 1 on load
 $(document).ready(function() {
-  $('.map-menu button#btn1').trigger('click');
+  // $('.map-menu button#btn2').trigger('click');
 });
 
 // $('.maps-container:not(.pulse) ').click(function() {
@@ -17,7 +17,8 @@ $('.map-menu button').click(function() {
   if ($(this).attr('id') === 'btn1') {
     $('.maps-container > div:not(#map1-container)').hide();
     $('#map1-container').fadeIn(800);
-    $('#map1').vectorMap('get','mapObject').updateSize();
+    // $('#map1').vectorMap('get','mapObject').updateSize();
+
   }
 
   else if ($(this).attr('id') === 'btn2') {
@@ -34,9 +35,6 @@ $('.map-menu button').click(function() {
     $('#map4-container').fadeIn(800);
     $('#map4').vectorMap('get','mapObject').updateSize();
     console.log("bt4 clicked");
-
-
-
 
   } //end else if
   else {
@@ -150,7 +148,7 @@ $(function(){
 $(function(){
   var scope = {};
   scope.bgColor = 'transparant';
-  scope.scaleColors = ['#fffdfd','#cb333b'];
+  scope.scaleColors = ['#fbf0f1','#cb333b'];
   scope.fillColor = '#e7e7e9';
   scope.strokeColor = '#fff';
   scope.strokeWidth = '0.4';
