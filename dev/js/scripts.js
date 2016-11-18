@@ -42,7 +42,7 @@ $('.map-menu button').click(function() {
   else {
     $('.maps-container > div:not(#map5-container)').hide();
     $('#map5-container').fadeIn(800);
-    // $('#map5').vectorMap('get','mapObject').updateSize();
+    $('#map5').vectorMap('get','mapObject').updateSize();
   }
 
 
@@ -193,7 +193,7 @@ $(function(){
       }]
     },
     onRegionTipShow: function(e, label, index){
-      label.html(label.html()+'<br> (Rate - '+mortalityData[index]+')');
+      label.html(label.html()+'<br> (Rate: '+mortalityData[index]+')');
     },
     onMarkerTipShow: function(event, tip, index){
       tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
@@ -273,7 +273,7 @@ $(function(){
       }]
     },
     onRegionTipShow: function(e, label, index){
-      label.html(label.html()+'<br> (Rate - '+maternalData[index]+')');
+      label.html(label.html()+'<br> (Rate: '+maternalData[index]+')');
     },
     onMarkerTipShow: function(event, tip, index){
       tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
@@ -358,7 +358,7 @@ $(function(){
       }]
     },
     onRegionTipShow: function(e, label, index){
-      label.html(label.html()+'<br> (GDP - '+physicianData[index]+')');
+      label.html(label.html()+'<br> (Rate: '+physicianData[index]+')');
     },
     onMarkerTipShow: function(event, tip, index){
       tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
@@ -390,4 +390,85 @@ $(function(){
   });
 });// end function
 
+
 //Map 5
+$(function(){
+  var scope = {};
+  scope.bgColor = '#fff';
+  scope.scaleColors = ['#fbf0f1','#cb333b'];
+  scope.fillColor = '#e7e7e9';
+  scope.strokeColor = '#fff';
+  scope.strokeWidth = '0.4';
+  scope.markerColor = '#21ACDE';
+  scope.markerStrokeColor = '#1a8ab2';
+
+  $('#map5').vectorMap({
+    map: 'world_mill_en',
+    backgroundColor: scope.bgColor,
+    zoomOnScroll: false,
+    regionStyle: {
+      initial: {
+        fill: scope.fillColor,
+        stroke: scope.strokeColor,
+        "stroke-width": scope.strokeWidth
+      },
+      hover: {
+        "fill-opacity": 0.8,
+        cursor: 'pointer'
+      }
+    },
+    markers: markers,
+    markerStyle: {
+      initial: {
+        fill: scope.markerColor,
+        stroke: scope.markerColor
+      },
+      hover: {
+        "fill-opacity": 1,
+        stroke: scope.markerStrokeColor,
+        cursor: 'pointer'
+      }
+    },
+    series: {
+      regions: [{
+        values: battleData,
+        scale: scope.scaleColors,
+        normalizeFunction: 'polynomial',
+        legend: {
+          horizontal: true,
+          title: 'Per 1000 people'
+        }
+      }]
+    },
+    onRegionTipShow: function(e, label, index){
+      label.html(label.html()+'<br> (Rate: '+battleData[index]+')');
+    },
+    onMarkerTipShow: function(event, tip, index){
+      tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
+      event.preventDefault();
+    },
+    onMarkerClick: function(event, tip, code ) {
+      var map = $('#map5').vectorMap('get', 'mapObject');
+      var customTip = $('#customTip');
+
+      customTip.css({
+        left: left,
+        top: top
+      })
+
+      customTip.html(map.tip.html());
+      customTip.prepend("<button>&#215;</button>");
+      customTip.children("button").click(function(){
+        customTip.hide();
+      })
+
+      customTip.show();
+    }
+  });// end vectorMap
+
+  var left,top;
+  $('#map5').vectorMap('get', 'mapObject').container.mousemove(function(e){
+    left = e.pageX - 320;
+    top = e.pageY - 220;
+  });
+});// end function

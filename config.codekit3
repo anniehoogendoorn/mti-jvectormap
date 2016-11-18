@@ -9,6 +9,16 @@
 	],
 "creatorBuild": "25444",
 "files": {
+	"\/assets\/css\/custom-styles-ck.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/css\/custom-styles-ck-ck.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/assets\/css\/custom-styles.css": {
 		"aP": 0,
 		"bl": 0,
@@ -232,6 +242,15 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/dev\/data-output\/battle-data.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/data\/battle-data-min.js",
+		"oF": 2,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/dev\/data-output\/births-data.js": {
 		"ft": 64,
 		"mi": 1,
@@ -337,6 +356,15 @@
 		"oA": 0,
 		"oAP": "\/assets\/js\/markers-min.js",
 		"oF": 2,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dev\/js\/min\/scripts-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dev\/js\/min\/min\/scripts-min-min.js",
+		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
