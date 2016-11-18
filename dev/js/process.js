@@ -6,7 +6,7 @@ var mortalityResult = {};
 var physicianResult = {};
 var maternalMortalityResult = {};
 var birthsResult = {};
-var battleDeathsResult = {};
+var battleResult = {};
 
 function processData(jsonData, result) {
 
@@ -24,7 +24,7 @@ function processData(jsonData, result) {
   ).done(function() {
     for (var i=0; i<gapminderData.length; i++) {
       var gapminderData_country = gapminderData[i].country;
-      var gapminderData_stat = gapminderData[i].stat;
+      var gapminderData_stat = Math.round( gapminderData[i].stat * 10 ) / 10;
       // Loop through countryData object and if country matches gapminder data country, save key (country code) to equal stat to result
       $.each(countryData, function(key, value) {
         if (gapminderData_country === value ) {
