@@ -40,7 +40,9 @@ $('.map-menu button').click(function() {
 
   } //end else if
   else {
-    //map 5
+    $('.maps-container > div:not(#map5-container)').hide();
+    $('#map5-container').fadeIn(800);
+    // $('#map5').vectorMap('get','mapObject').updateSize();
   }
 
 
@@ -387,3 +389,5 @@ $(function(){
     top = e.pageY - 220;
   });
 });// end function
+
+//Map 5
