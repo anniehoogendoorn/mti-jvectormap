@@ -433,7 +433,7 @@ $(function(){
       regions: [{
         values: battleData,
         scale: scope.scaleColors,
-        normalizeFunction: 'polynomial',
+        // normalizeFunction: 'polynomial',
         legend: {
           horizontal: true,
           title: 'Per 1000 people'
