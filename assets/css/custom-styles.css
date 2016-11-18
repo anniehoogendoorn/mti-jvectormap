@@ -105,6 +105,8 @@ button.selected {
   height: 100%;
   max-width: 900px;
   max-height: 475px;
+  padding-bottom: 40px;
+
 }
 
 .map-container {
