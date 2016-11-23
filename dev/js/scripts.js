@@ -139,10 +139,19 @@ $(function(){
   });// end vectorMap
 
   var left,top;
-  $('#map1').vectorMap('get', 'mapObject').container.mousemove(function(e){
-    left = e.pageX - 320;
-    top = e.pageY - 220;
-  });
+  if (window.matchMedia("(min-width: 475px)").matches) {
+    $('#map1').vectorMap('get', 'mapObject').container.mousemove(function(e){
+      left = e.pageX - 320;
+      top = e.pageY - 220;
+    });
+  }
+
+  if (window.matchMedia("(max-width: 475px)").matches) {
+    $('#map1').vectorMap('get', 'mapObject').container.mousemove(function(e){
+      left = 50+"%";
+      top = 68+"%";
+    });
+  }
 
 });// end function
 

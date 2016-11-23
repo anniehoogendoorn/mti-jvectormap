@@ -1,47 +1,37 @@
-/* GENERAL */
-
+/********************
+  GENERAL
+*********************/
 body {
   font-family: "purista-web-n4","purista-web", Arial, Helvetica, sans-serif;
-  margin-top: 50px;
-}
+  margin-top: 50px; }
 
 h1 {
-  text-align: center;
-}
-
+  text-align: center; }
 
 h3 {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 p {
   font-size: .8rem;
-  color: #53564A;
-}
-
+  color: #53564A; }
 
 li {
   font-size: .6rem;
-  text-align: left:
-}
+  text-align: left; }
 
 a {
   text-decoration: none;
-  color: #21ACDE;
-}
+  color: #21ACDE; }
 
-
-
-/* MENU BAR */
-
+/********************
+  MENU BAR
+*********************/
 .map-menu {
   max-width: 912px;
   margin: 0 auto 20px;
   display: flex;
   justify-content: center;
-  text-align: center;
-}
-
+  text-align: center; }
 
 button {
   flex-grow: 1;
@@ -49,55 +39,42 @@ button {
   padding: 8px 20px;
   border: 1px solid #ccc;
   margin-right: -5px;
-  font-size: 15px;
-}
+  font-size: 15px; }
 
 @media (max-width: 768px) {
   button {
-    font-size: 12px;
-  }
-}
+    font-size: 12px; } }
 
 @media (max-width: 630px) {
   button {
-    font-size: 10px;
-  }
-}
+    font-size: 10px; } }
 
 @media (max-width: 475px) {
   .map-menu {
-    flex-wrap: wrap;
-  }
+    flex-wrap: wrap; }
   button {
     width: 100%;
-    border-bottom: none;
-  }
+    border-bottom: none; }
   button:last-of-type {
-    border-bottom: 1px solid #ccc;
-  }
-}
+    border-bottom: 1px solid #ccc; } }
 
 button:focus {
-  outline: none;
-}
+  outline: none; }
 
 button.selected {
   background: white;
   padding-top: 10px;
-  border-bottom: none;
-}
+  border-bottom: none; }
 
-
-/* MAPS */
-
-.maps-container  {
+/**************************
+  MAPS
+***************************/
+.maps-container {
   /*width: 100%;
   height: 100%;*/
   margin: 0 auto;
   max-width: 900px;
-  max-height: 475px;
-
-}
+  max-height: 475px; }
 
 .map {
   position: absolute;
@@ -105,128 +82,114 @@ button.selected {
   height: 100%;
   max-width: 900px;
   max-height: 475px;
-}
+  padding-bottom: 40px; }
 
 .map-container {
-  margin-bottom: 40px;
-}
+  margin-bottom: 40px; }
 
 .map-container .title, .map-container p.sub-title {
   text-align: center;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 .map-container .title {
   margin-top: 40px;
-  margin-bottom: 5px;
-}
-.map-container p.sub-title {
-  margin: 0;
-}
+  margin-bottom: 5px; }
 
+.map-container p.sub-title {
+  margin-top: 0;
+  margin-bottom: 10px; }
 
 /*#map1-container {
   display: none;
 }*/
-
 #map2-container {
-  display: none;
-}
+  display: none; }
 
 #map3-container {
-  display: none;
-}
+  display: none; }
 
-
-/* Marker animation */
-
+/************************
+  MARKER ANIMATION
+*************************/
 @keyframes svg_pulse {
   0% {
     stroke-width: 15;
-    stroke-opacity: .9;
-  }
+    stroke-opacity: .9; }
   30% {
-    stroke-opacity: .1;
-  }
+    stroke-opacity: .1; }
   60% {
     stroke-width: 0.2;
-    stroke-opacity: 1;
-  }
-}
+    stroke-opacity: 1; } }
 
 .pulse {
   animation: svg_pulse 5s ease;
-  animation-iteration-count: infinite;
-}
+  animation-iteration-count: infinite; }
 
 .pulse:hover, .pulse:clicked {
   animation-play-state: paused;
-  r: 8;
-}
+  r: 8; }
 
-
-/*Custom Tip Info Window*/
-
-image {
-  /*width: -15px;*/
+/***************************
+  CUSTOM TIP INFO WINDOW
+****************************/
+/*image {
+  width: -15px;
   height: 22px;
   display: relative;
   top: -30px;
-}
-
+}*/
 #customTip {
   display: none;
+  position: absolute;
   padding: 10px 15px 25px;
   line-height: 23px;
-  max-width: 250px;
-}
+  width: 250px; }
+
+@media screen and (max-width: 475px) {
+  #customTip {
+    transform: translateX(-45%);
+    width: 70%;
+    /*margin: 20px;*/ } }
+
 #customTip button {
   float: right;
-  color: #ccc;
-  font-size: 18px;
+  color: #bbb;
+  font-size: 20px;
   font-weight: 400;
   background: #fff;
   border: none;
-  padding-right: 0;
-}
+  padding-right: 0; }
 
 #customTip button:hover {
   cursor: pointer;
-  color: #bbb;
-}
+  color: #999; }
 
 #customTip span {
-  font-weight: 400;
-}
+  font-weight: 400; }
 
-
-/* Customised jvectormap css */
+/*****************************
+  CUSTOMISED JVECTORMAP CSS
+******************************/
 .jvectormap-tip {
-    border: solid 1px #F4F4F4;
-    border-radius: 3px;
-    background: #fff;
-    color: #53564A;
-    font-family: sans-serif, Verdana;
-    font-size: smaller;
-    padding: 0 15px 15px;
-    margin: -10px;
-    /*overflow: hidden;*/
-}
+  border: solid 1px #F4F4F4;
+  border-radius: 3px;
+  background: #fff;
+  color: #53564A;
+  font-family: sans-serif, Verdana;
+  font-size: smaller;
+  padding: 0 15px 15px;
+  margin: -10px;
+  /*overflow: hidden;*/ }
 
 .jvectormap-tip a {
   text-decoration: none;
-  color: #21ACDE;
-}
-
-
-
+  color: #21ACDE; }
 
 /*div.info-window {
   max-width: 250px;
   position: relative;
   background: pink;
 }*/
-
 /*div.info-window:before{
   content: '';
   background: orange;
@@ -236,15 +199,12 @@ image {
   top: -20px;
   left: -20px;
 }*/
-
 /*.info-window:hover + .jvectormap-tip {
   display: block !important;
 }*/
-
 /*.jvectormap-tip {
   display: block !important;
 }*/
-
 /*.is-hover {
   display: block !important;
 }*/

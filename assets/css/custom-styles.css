@@ -24,7 +24,7 @@ p {
 
 li {
   font-size: .6rem;
-  text-align: left:
+  text-align: left;
 }
 
 a {
@@ -180,19 +180,29 @@ button.selected {
   CUSTOM TIP INFO WINDOW
 ****************************/
 
-image {
+/*image {
   width: -15px;
   height: 22px;
   display: relative;
   top: -30px;
-}
+}*/
 
 #customTip {
   display: none;
+  position: absolute;
   padding: 10px 15px 25px;
   line-height: 23px;
-  max-width: 250px;
+  width: 250px;
 }
+
+@media screen and (max-width: 475px) {
+  #customTip {
+    transform: translateX(-45%);
+    width: 70%;
+    /*margin: 20px;*/
+  }
+}
+
 #customTip button {
   float: right;
   color: #bbb;
