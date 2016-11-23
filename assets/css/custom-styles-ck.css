@@ -149,7 +149,22 @@ button.selected {
   #customTip {
     transform: translateX(-45%);
     width: 70%;
-    /*margin: 20px;*/ } }
+    top: 68%;
+    left: 50%; } }
+
+@media screen and (max-width: 768px) {
+  #customTip {
+    transform: translateX(-45%);
+    width: 50%;
+    top: 50%;
+    left: 50%; } }
+
+@media screen and (min-width: 769px) {
+  #customTip {
+    transform: translateX(-45%);
+    width: 30%;
+    top: 50%;
+    left: 50%; } }
 
 #customTip button {
   float: right;
