@@ -3,9 +3,9 @@ MENU BAR
 **************************/
 
 // Add click to button 1 on load
-// $(document).ready(function() {
-//   $('.map-menu button#btn1').trigger('click');
-// });
+$(document).ready(function() {
+  $('.map-menu button#btn1').trigger('click');
+});
 
 // $('.maps-container:not(.pulse) ').click(function() {
 //   $('#customTip').hide();
@@ -14,20 +14,29 @@ MENU BAR
 // Shows and hides maps on menu tab click
 $.fn.makeVisible = function() {
   this.css('visibility', 'visible');
+  return this;
 }
+
+$.fn.makeInvisible = function() {
+  this.css('visibility', 'hidden');
+  return this;
+}
+
 
 $('.map-menu button').click(function() {
   $('button').not(this).removeClass("selected");
   $(this).addClass('selected');
 
   if ($(this).attr('id') === 'btn1') {
-    $('.maps-container > div:not(#map1-container)').hide();
-    $('#map1-container').fadeIn(300);
+    // $('.maps-container > div:not(#map1-container)').makeInvisible();
+    // $('#map1-container').makeVisible();
+    // $('#map1-container').fadeIn(300);
   }
   else if ($(this).attr('id') === 'btn2') {
-    $('.maps-container > div:not(#map2-container)').hide();
-    $('#map1-container').hide();
-    $('#map2-container').css('visibility','visible');
+    $('.map:not(#map2)').addClass('hide-map');
+    $('.map-header:not(#map2-header)').addClass('hide-map-header');
+    $('#map2').removeClass('hide-map');
+    $('#map2-header').removeClass('hide-map-header');
     // $('#map2-container').fadeIn(300);
     // $('#map2').vectorMap('get','mapObject').updateSize();
   }
