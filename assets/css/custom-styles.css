@@ -139,12 +139,22 @@ button.selected {
 }*/
 
 #map2-container {
-  display: none;
+  visibility: hidden;
 }
 
 #map3-container {
   display: none;
 }
+
+#map4-container {
+  display: none;
+}
+
+#map5-container {
+  display: none;
+}
+
+
 
 
 /************************

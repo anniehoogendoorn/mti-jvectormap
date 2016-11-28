@@ -3,15 +3,19 @@ MENU BAR
 **************************/
 
 // Add click to button 1 on load
-$(document).ready(function() {
-  $('.map-menu button#btn1').trigger('click');
-});
+// $(document).ready(function() {
+//   $('.map-menu button#btn1').trigger('click');
+// });
 
 // $('.maps-container:not(.pulse) ').click(function() {
 //   $('#customTip').hide();
 // })
 
-//Shows and hides maps on menu tab click
+// Shows and hides maps on menu tab click
+$.fn.makeVisible = function() {
+  this.css('visibility', 'visible');
+}
+
 $('.map-menu button').click(function() {
   $('button').not(this).removeClass("selected");
   $(this).addClass('selected');
@@ -19,33 +23,64 @@ $('.map-menu button').click(function() {
   if ($(this).attr('id') === 'btn1') {
     $('.maps-container > div:not(#map1-container)').hide();
     $('#map1-container').fadeIn(300);
-    // $('#map1').vectorMap('get','mapObject').updateSize();
-
   }
-
   else if ($(this).attr('id') === 'btn2') {
     $('.maps-container > div:not(#map2-container)').hide();
-    $('#map2-container').fadeIn(300);
-    $('#map2').vectorMap('get','mapObject').updateSize();
+    $('#map1-container').hide();
+    $('#map2-container').css('visibility','visible');
+    // $('#map2-container').fadeIn(300);
+    // $('#map2').vectorMap('get','mapObject').updateSize();
   }
-  else if ($(this).attr('id') == "btn3"){
-    $('.maps-container > div:not(#map3-container)').hide();
-    $('#map3-container').fadeIn(300);
-    $('#map3').vectorMap('get','mapObject').updateSize();
-  }
-  else if ($(this).attr('id') == "btn4") {
-    $('.maps-container > div:not(#map4-container)').hide();
-    $('#map4-container').fadeIn(300);
-    $('#map4').vectorMap('get','mapObject').updateSize();
-  }
-  else {
-    $('.maps-container > div:not(#map5-container)').hide();
-    $('#map5-container').fadeIn(300);
-    $('#map5').vectorMap('get','mapObject').updateSize();
-  }
-
-
+  // else if ($(this).attr('id') == "btn3"){
+  //   $('.maps-container > div:not(#map3-container)').hide();
+  //   $('#map3-container').fadeIn(300);
+  //   $('#map3').vectorMap('get','mapObject').updateSize();
+  // }
+  // else if ($(this).attr('id') == "btn4") {
+  //   $('.maps-container > div:not(#map4-container)').hide();
+  //   $('#map4-container').fadeIn(300);
+  //   $('#map4').vectorMap('get','mapObject').updateSize();
+  // }
+  // else {
+  //   $('.maps-container > div:not(#map5-container)').hide();
+  //   $('#map5-container').fadeIn(300);
+  //   $('#map5').vectorMap('get','mapObject').updateSize();
+  // }
 });
+
+//Working version on Chrome & Safari
+//Shows and hides maps on menu tab click
+
+// $('.map-menu button').click(function() {
+//   $('button').not(this).removeClass("selected");
+//   $(this).addClass('selected');
+//
+//   if ($(this).attr('id') === 'btn1') {
+//     $('.maps-container > div:not(#map1-container)').hide();
+//     $('#map1-container').fadeIn(300);
+//   }
+//   else if ($(this).attr('id') === 'btn2') {
+//     $('.maps-container > div:not(#map2-container)').hide();
+//     $('#map2-container').fadeIn(300);
+//     $('#map2').vectorMap('get','mapObject').updateSize();
+//   }
+//   else if ($(this).attr('id') == "btn3"){
+//     $('.maps-container > div:not(#map3-container)').hide();
+//     $('#map3-container').fadeIn(300);
+//     $('#map3').vectorMap('get','mapObject').updateSize();
+//   }
+//   else if ($(this).attr('id') == "btn4") {
+//     $('.maps-container > div:not(#map4-container)').hide();
+//     $('#map4-container').fadeIn(300);
+//     $('#map4').vectorMap('get','mapObject').updateSize();
+//   }
+//   else {
+//     $('.maps-container > div:not(#map5-container)').hide();
+//     $('#map5-container').fadeIn(300);
+//     $('#map5').vectorMap('get','mapObject').updateSize();
+//   }
+// });
+
 
 
 
