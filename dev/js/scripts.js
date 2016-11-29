@@ -11,18 +11,28 @@ $(document).ready(function() {
 //   $('#customTip').hide();
 // })
 
+// Functions for showing & hiding maps
+$.fn.hideMap = function() {
+  this.addClass('hide-map');
+  return this;
+}
+$.fn.hideMapHeader = function() {
+  this.addClass('hide-header');
+  return this;
+}
+
+$.fn.showMap = function() {
+  this.removeClass('hide-map').addClass('fade-in');
+  return this;
+}
+
+$.fn.showMapHeader = function() {
+  this.removeClass('hide-header').addClass('fade-in');
+  return this;
+}
+
+
 // Shows and hides maps on menu tab click
-$.fn.makeVisible = function() {
-  this.css('visibility', 'visible');
-  return this;
-}
-
-$.fn.makeInvisible = function() {
-  this.css('visibility', 'hidden');
-  return this;
-}
-
-
 $('.map-menu button').click(function() {
   $('button').not(this).removeClass("selected");
   $(this).addClass('selected');
@@ -33,12 +43,10 @@ $('.map-menu button').click(function() {
     // $('#map1-container').fadeIn(300);
   }
   else if ($(this).attr('id') === 'btn2') {
-    $('.map:not(#map2)').addClass('hide-map');
-    $('.map-header:not(#map2-header)').addClass('hide-map-header');
-    $('#map2').removeClass('hide-map');
-    $('#map2-header').removeClass('hide-map-header');
-    // $('#map2-container').fadeIn(300);
-    // $('#map2').vectorMap('get','mapObject').updateSize();
+    $('.map-header:not(#map2-header)').hideMapHeader();
+    $('.map:not(#map2)').hideMap();
+    $('#map2-header').showMapHeader();
+    $('#map2').showMap();
   }
   // else if ($(this).attr('id') == "btn3"){
   //   $('.maps-container > div:not(#map3-container)').hide();
