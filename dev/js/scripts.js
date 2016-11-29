@@ -13,11 +13,11 @@ $(document).ready(function() {
 
 // Functions for showing & hiding maps
 $.fn.hideMap = function() {
-  this.addClass('hide-map');
+  this.addClass('hide-map').removeClass('fade-in');
   return this;
 }
-$.fn.hideMapHeader = function() {
-  this.addClass('hide-header');
+$.fn.hideHeader = function() {
+  this.addClass('hide-header').removeClass('fade-in');
   return this;
 }
 
@@ -26,7 +26,7 @@ $.fn.showMap = function() {
   return this;
 }
 
-$.fn.showMapHeader = function() {
+$.fn.showHeader = function() {
   this.removeClass('hide-header').addClass('fade-in');
   return this;
 }
@@ -38,14 +38,15 @@ $('.map-menu button').click(function() {
   $(this).addClass('selected');
 
   if ($(this).attr('id') === 'btn1') {
-    // $('.maps-container > div:not(#map1-container)').makeInvisible();
-    // $('#map1-container').makeVisible();
-    // $('#map1-container').fadeIn(300);
+    $('.map-header:not(#map1-header)').hideHeader();
+    $('.map:not(#map1)').hideMap();
+    $('#map1-header').showHeader();
+    $('#map1').showMap();
   }
   else if ($(this).attr('id') === 'btn2') {
-    $('.map-header:not(#map2-header)').hideMapHeader();
+    $('.map-header:not(#map2-header)').hideHeader();
     $('.map:not(#map2)').hideMap();
-    $('#map2-header').showMapHeader();
+    $('#map2-header').showHeader();
     $('#map2').showMap();
   }
   // else if ($(this).attr('id') == "btn3"){
