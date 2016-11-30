@@ -158,28 +158,6 @@ button.selected {
   }
 }
 
-/*#map1-container {
-  display: none;
-}*/
-
-/*#map2 {
-  visibility: hidden;
-  left: -9999px;
-}*/
-
-/*#map3-container {
-  display: none;
-}*/
-
-/*#map4-container {
-  display: none;
-}
-
-#map5-container {
-  display: none;
-}*/
-
-
 
 
 /************************
@@ -239,7 +217,7 @@ button.selected {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #customTip {
     transform: translateX(-45%);
     width: 50%;
@@ -297,34 +275,3 @@ button.selected {
   text-decoration: none;
   color: #21ACDE;
 }
-
-
-
-
-/*div.info-window {
-  max-width: 250px;
-  position: relative;
-  background: pink;
-}*/
-
-/*div.info-window:before{
-  content: '';
-  background: orange;
-  width: calc(100% + 50px);
-  height: calc(100% + 50px);
-  position: absolute;
-  top: -20px;
-  left: -20px;
-}*/
-
-/*.info-window:hover + .jvectormap-tip {
-  display: block !important;
-}*/
-
-/*.jvectormap-tip {
-  display: block !important;
-}*/
-
-/*.is-hover {
-  display: block !important;
-}*/
