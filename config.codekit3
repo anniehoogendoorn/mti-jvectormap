@@ -24,7 +24,7 @@
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/assets\/css\/custom-styles-ck.css",
 		"oF": 0,
 		"oS": 0
@@ -183,7 +183,7 @@
 	"\/assets\/js\/scripts-min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/assets\/js\/min\/scripts-min-min.js",
 		"oF": 0,
 		"sC": 1,
@@ -390,14 +390,14 @@
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/dev\/js\/min\/scripts-min.js",
-		"oF": 0,
+		"oAP": "\/assets\/js\/scripts-min.js",
+		"oF": 2,
 		"sC": 0,
 		"tS": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "\/index.html",
 		"oF": 0
 		}

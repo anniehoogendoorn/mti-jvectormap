@@ -4,7 +4,7 @@ MENU BAR
 
 // Add click to button 1 on load
 $(document).ready(function() {
-  $('.map-menu button#btn1').trigger('click');
+  $('.map-nav button#btn1').trigger('click');
 });
 
 // $('.maps-container:not(.pulse) ').click(function() {
@@ -34,7 +34,7 @@ $.fn.showHeader = function() {
 
 
 // Shows and hides maps on menu tab click
-$('.map-menu button').click(function() {
+$('.map-nav button').click(function() {
   $('button').not(this).removeClass("selected");
   $(this).addClass('selected');
 
@@ -73,7 +73,7 @@ $('.map-menu button').click(function() {
 //Version below works only on Chrome & Safari
 //Shows and hides maps on menu tab click
 
-// $('.map-menu button').click(function() {
+// $('.map-nav button').click(function() {
 //   $('button').not(this).removeClass("selected");
 //   $(this).addClass('selected');
 //
