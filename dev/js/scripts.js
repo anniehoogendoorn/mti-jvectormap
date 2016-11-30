@@ -56,19 +56,21 @@ $('.map-menu button').click(function() {
     $('#map3-header').showHeader();
     $('#map3').showMap();
   }
-  // else if ($(this).attr('id') == "btn4") {
-  //   $('.maps-container > div:not(#map4-container)').hide();
-  //   $('#map4-container').fadeIn(300);
-  //   $('#map4').vectorMap('get','mapObject').updateSize();
-  // }
-  // else {
-  //   $('.maps-container > div:not(#map5-container)').hide();
-  //   $('#map5-container').fadeIn(300);
-  //   $('#map5').vectorMap('get','mapObject').updateSize();
-  // }
+  else if ($(this).attr('id') == "btn4") {
+    $('.map-header:not(#map4-header)').hideHeader();
+    $('.map:not(#map4)').hideMap();
+    $('#map4-header').showHeader();
+    $('#map4').showMap();
+  }
+  else {
+    $('.map-header:not(#map5-header)').hideHeader();
+    $('.map:not(#map5)').hideMap();
+    $('#map5-header').showHeader();
+    $('#map5').showMap();
+  }
 });
 
-//Working version on Chrome & Safari
+//Version below works only on Chrome & Safari
 //Shows and hides maps on menu tab click
 
 // $('.map-menu button').click(function() {
@@ -166,13 +168,7 @@ $(function(){
       tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
       event.preventDefault();
     },
-    onMarkerOver: function(event, tip, code){
-      // console.log('You have triggered mouseover');
-
-
-    },
     onMarkerClick: function(event, tip, code ) {
-      console.log('You have triggered click');
       var map = $('#map1').vectorMap('get', 'mapObject');
       var customTip = $('#customTip');
 
