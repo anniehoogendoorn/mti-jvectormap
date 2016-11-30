@@ -4,49 +4,105 @@ MENU BAR
 
 // Add click to button 1 on load
 $(document).ready(function() {
-  $('.map-menu button#btn4').trigger('click');
+  $('.map-menu button#btn1').trigger('click');
 });
 
 // $('.maps-container:not(.pulse) ').click(function() {
 //   $('#customTip').hide();
 // })
 
-//Shows and hides maps on menu tab click
+// Functions for showing & hiding maps
+$.fn.hideMap = function() {
+  this.addClass('hide-map').removeClass('fade-in');
+  return this;
+}
+
+$.fn.hideHeader = function() {
+  this.addClass('hide-header').removeClass('fade-in');
+  return this;
+}
+
+$.fn.showMap = function() {
+  this.removeClass('hide-map').addClass('fade-in');
+  return this;
+}
+
+$.fn.showHeader = function() {
+  this.removeClass('hide-header').addClass('fade-in');
+  return this;
+}
+
+
+// Shows and hides maps on menu tab click
 $('.map-menu button').click(function() {
   $('button').not(this).removeClass("selected");
   $(this).addClass('selected');
 
   if ($(this).attr('id') === 'btn1') {
-    $('.maps-container > div:not(#map1-container)').hide();
-    $('#map1-container').fadeIn(800);
-    // $('#map1').vectorMap('get','mapObject').updateSize();
-
+    $('.map-header:not(#map1-header)').hideHeader();
+    $('.map:not(#map1)').hideMap();
+    $('#map1-header').showHeader();
+    $('#map1').showMap();
   }
-
   else if ($(this).attr('id') === 'btn2') {
-    $('.maps-container > div:not(#map2-container)').hide();
-    $('#map2-container').fadeIn(800);
-    $('#map2').vectorMap('get','mapObject').updateSize();
+    $('.map-header:not(#map2-header)').hideHeader();
+    $('.map:not(#map2)').hideMap();
+    $('#map2-header').showHeader();
+    $('#map2').showMap();
   }
   else if ($(this).attr('id') == "btn3"){
-    $('.maps-container > div:not(#map3-container)').hide();
-    $('#map3-container').fadeIn(800);
-    $('#map3').vectorMap('get','mapObject').updateSize();
+    $('.map-header:not(#map3-header)').hideHeader();
+    $('.map:not(#map3)').hideMap();
+    $('#map3-header').showHeader();
+    $('#map3').showMap();
   }
   else if ($(this).attr('id') == "btn4") {
-    $('.maps-container > div:not(#map4-container)').hide();
-    $('#map4-container').fadeIn(800);
-    // $('#map4').vectorMap('get','mapObject').updateSize();
-
-  } //end else if
-  else {
-    $('.maps-container > div:not(#map5-container)').hide();
-    $('#map5-container').fadeIn(800);
-    $('#map5').vectorMap('get','mapObject').updateSize();
+    $('.map-header:not(#map4-header)').hideHeader();
+    $('.map:not(#map4)').hideMap();
+    $('#map4-header').showHeader();
+    $('#map4').showMap();
   }
-
-
+  else {
+    $('.map-header:not(#map5-header)').hideHeader();
+    $('.map:not(#map5)').hideMap();
+    $('#map5-header').showHeader();
+    $('#map5').showMap();
+  }
 });
+
+//Version below works only on Chrome & Safari
+//Shows and hides maps on menu tab click
+
+// $('.map-menu button').click(function() {
+//   $('button').not(this).removeClass("selected");
+//   $(this).addClass('selected');
+//
+//   if ($(this).attr('id') === 'btn1') {
+//     $('.maps-container > div:not(#map1-container)').hide();
+//     $('#map1-container').fadeIn(300);
+//   }
+//   else if ($(this).attr('id') === 'btn2') {
+//     $('.maps-container > div:not(#map2-container)').hide();
+//     $('#map2-container').fadeIn(300);
+//     $('#map2').vectorMap('get','mapObject').updateSize();
+//   }
+//   else if ($(this).attr('id') == "btn3"){
+//     $('.maps-container > div:not(#map3-container)').hide();
+//     $('#map3-container').fadeIn(300);
+//     $('#map3').vectorMap('get','mapObject').updateSize();
+//   }
+//   else if ($(this).attr('id') == "btn4") {
+//     $('.maps-container > div:not(#map4-container)').hide();
+//     $('#map4-container').fadeIn(300);
+//     $('#map4').vectorMap('get','mapObject').updateSize();
+//   }
+//   else {
+//     $('.maps-container > div:not(#map5-container)').hide();
+//     $('#map5-container').fadeIn(300);
+//     $('#map5').vectorMap('get','mapObject').updateSize();
+//   }
+// });
+
 
 
 
@@ -89,7 +145,6 @@ $(function(){
         stroke: scope.markerStrokeColor,
         cursor: 'pointer'
       }
-
     },
     series: {
       regions: [{
@@ -113,13 +168,7 @@ $(function(){
       tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
       event.preventDefault();
     },
-    onMarkerOver: function(event, tip, code){
-      // console.log('You have triggered mouseover');
-
-
-    },
     onMarkerClick: function(event, tip, code ) {
-      console.log('You have triggered click');
       var map = $('#map1').vectorMap('get', 'mapObject');
       var customTip = $('#customTip');
 
@@ -140,10 +189,13 @@ $(function(){
   });// end vectorMap
 
   var left,top;
-  $('#map1').vectorMap('get', 'mapObject').container.mousemove(function(e){
-    left = e.pageX - 320;
-    top = e.pageY - 220;
-  });
+  if (window.matchMedia("(min-width: 769px)").matches) {
+    $('#map1').vectorMap('get', 'mapObject').container.mousemove(function(e){
+      left = e.pageX - 320;
+      top = e.pageY - 220;
+    });
+  }
+
 
 });// end function
 
@@ -436,7 +488,7 @@ $(function(){
         // normalizeFunction: 'polynomial',
         legend: {
           horizontal: true,
-          title: 'Per 1000 people'
+          title: 'Per 100 000 standard population'
         }
       }]
     },

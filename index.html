@@ -13,18 +13,15 @@
   <script src="assets/data/maternal-data-min.js"></script>
   <script src="assets/data/physician-data-min.js"></script>
   <script src="assets/data/gdp-data-min.js"></script>
-  <script src="dev/js/process.js"></script>
   <script src="assets/data/battle-data-min.js"></script>
+  <!-- <script src="dev/js/process.js"></script> -->
 
   <link rel="stylesheet" href="assets/css/custom-styles.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
 
-  <!-- <header>
-    <h1>Interactive Map</h1>
-  </header> -->
-  <div class="map-menu">
-    <button id="btn1" type="button" name="button">Births Attended</button>
+  <div class="map-nav">
+    <button id="btn1" class="map-nav_tab selected" type="button" name="button">Births Attended</button>
 
     <button id="btn2" type="button" name="button">Child Mortality</button>
 
@@ -35,34 +32,53 @@
     <button id="btn5" type="button" name="button">Battle Deaths</button>
   </div>
   <div class="maps-container">
+
     <div id="map1-container" class="map-container">
+      <header id="map1-header" class="map-header">
         <h2 class="title">Births attended by skilled health staff </h2>
         <p class="sub-title">Source: Gapminder</p>
+      </header>
       <div id="map1" class="map"></div>
     </div>
 
     <div id="map2-container" class="map-container">
-      <h2 class="title">Under-Five Child Mortality Rate</h2>
-      <p class="sub-title">Source: Gapminder</p>
-      <div id="map2" class="map"></div>
+      <header id="map2-header" class="map-header hide-header">
+        <h2 class="title">Under-Five Child Mortality Rate</h2>
+        <p class="sub-title">Source: Gapminder</p>
+      </header>
+      <div id="map2" class="map hide-map"></div>
     </div>
+
     <div id="map3-container" class="map-container">
-      <h2 class="title">Maternal Mortality Rate</h2>
-      <p class="sub-title">Source: Gapminder</p>
-      <div id="map3" class="map"></div>
+      <header id="map3-header" class="map-header hide-header">
+        <h2 class="title">Maternal Mortality Rate</h2>
+        <p class="sub-title">Source: Gapminder</p>
+      </header>
+      <div id="map3" class="map hide-map"></div>
     </div>
+
     <div id="map4-container" class="map-container">
+      <header id="map4-header" class="map-header hide-header">
       <h2 class="title">Medical Doctors</h2>
       <p class="sub-title">Source: Gapminder</p>
-      <div id="map4" class="map"></div>
+      </header>
+      <div id="map4" class="map hide-map"></div>
     </div>
+
     <div id="map5-container" class="map-container">
-      <h2 class="title">Battle Deaths</h2>
-      <p class="sub-title">Source: Gapminder</p>
-      <div id="map5" class="map"></div>
+      <header id="map5-header" class="map-header hide-header">
+        <h2 class="title">Battle Deaths</h2>
+        <p class="sub-title">Source: Gapminder</p>
+      </header>
+      <div id="map5" class="map hide-map"></div>
     </div>
+
     <div id="customTip" class="jvectormap-tip"></div>
+
   </div>
-<script src="assets/js/scripts-min.js"></script>
+<!-- <script src="assets/js/scripts-min.js"></script> -->
+<script src="dev/js/scripts.js"></script>
+
+</script>
 </body>
 </html>

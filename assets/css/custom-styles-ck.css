@@ -1,4 +1,6 @@
-/* GENERAL */
+/********************
+  GENERAL
+*********************/
 
 body {
   font-family: "purista-web-n4","purista-web", Arial, Helvetica, sans-serif;
@@ -22,19 +24,22 @@ p {
 
 li {
   font-size: .6rem;
-  text-align: left:
+  text-align: left;
 }
 
 a {
   text-decoration: none;
   color: #21ACDE;
+  display: inline-block;
 }
 
 
 
-/* MENU BAR */
+/********************
+  MENU BAR
+*********************/
 
-.map-menu {
+.map-nav {
   max-width: 912px;
   margin: 0 auto 20px;
   display: flex;
@@ -50,6 +55,7 @@ button {
   border: 1px solid #ccc;
   margin-right: -5px;
   font-size: 15px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -65,7 +71,7 @@ button {
 }
 
 @media (max-width: 475px) {
-  .map-menu {
+  .map-nav {
     flex-wrap: wrap;
   }
   button {
@@ -88,7 +94,9 @@ button.selected {
 }
 
 
-/* MAPS */
+/**************************
+  MAPS
+***************************/
 
 .maps-container  {
   /*width: 100%;
@@ -105,6 +113,8 @@ button.selected {
   height: 100%;
   max-width: 900px;
   max-height: 475px;
+  padding-bottom: 40px;
+
 }
 
 .map-container {
@@ -121,24 +131,124 @@ button.selected {
   margin-bottom: 5px;
 }
 .map-container p.sub-title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.hide-map {
+  visibility: hidden;
+  left: -9999em;
+}
+
+.hide-header {
+  display: none;
+}
+
+.fade-in {
+  animation: fadeIn 300ms ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*****************************
+  CUSTOMISED JVECTORMAP-TIP CSS
+******************************/
+
+.jvectormap-tip {
+    border: solid 1px #F4F4F4;
+    border-radius: 3px;
+    background: #fff;
+    color: #53564A;
+    font-family: sans-serif, Verdana;
+    font-size: smaller;
+    padding: 0 15px 15px;
+    margin: -10px;
+    /*overflow: hidden;*/
+}
+
+.jvectormap-tip a {
+  text-decoration: none;
+  color: #21ACDE;
 }
 
 
-/*#map1-container {
-  display: none;
+/***************************
+  CUSTOM TIP INFO WINDOW
+****************************/
+
+/*image {
+  width: -15px;
+  height: 22px;
+  display: relative;
+  top: -30px;
 }*/
 
-#map2-container {
+#customTip {
   display: none;
+  position: absolute;
+  padding: 10px 15px 25px;
+  line-height: 23px;
+  width: 250px;
 }
 
-#map3-container {
-  display: none;
+@media screen and (max-width: 475px) {
+  #customTip {
+    transform: translateX(-45%);
+    width: 70%;
+    top: 68%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 476) and (max-width: 767px) {
+  #customTip {
+    transform: translateX(-45%);
+    width: 50%;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+/*@media screen and (min-width: 769px) {
+  #customTip {
+    transform: translateX(-45%);
+    width: 30%;
+    top: 50%;
+    left: 50%;
+  }
+}*/
+
+#customTip button {
+  float: right;
+  color: #bbb;
+  font-size: 20px;
+  font-weight: 400;
+  background: #fff;
+  border: none;
+  padding-right: 0;
+}
+
+#customTip button:hover {
+  cursor: pointer;
+  color: #53564A;
+}
+
+#customTip span {
+  font-weight: 400;
 }
 
 
-/* Marker animation */
+
+/************************
+  MARKER ANIMATION
+*************************/
 
 @keyframes svg_pulse {
   0% {
@@ -163,88 +273,3 @@ button.selected {
   animation-play-state: paused;
   r: 8;
 }
-
-
-/*Custom Tip Info Window*/
-
-image {
-  /*width: -15px;*/
-  height: 22px;
-  display: relative;
-  top: -30px;
-}
-
-#customTip {
-  display: none;
-  padding: 10px 15px 25px;
-  line-height: 23px;
-  max-width: 250px;
-}
-#customTip button {
-  float: right;
-  color: #ccc;
-  font-size: 18px;
-  font-weight: 400;
-  background: #fff;
-  border: none;
-  padding-right: 0;
-}
-
-#customTip button:hover {
-  cursor: pointer;
-  color: #bbb;
-}
-
-#customTip span {
-  font-weight: 400;
-}
-
-
-/* Customised jvectormap css */
-.jvectormap-tip {
-    border: solid 1px #F4F4F4;
-    border-radius: 3px;
-    background: #fff;
-    color: #53564A;
-    font-family: sans-serif, Verdana;
-    font-size: smaller;
-    padding: 0 15px 15px;
-    margin: -10px;
-    /*overflow: hidden;*/
-}
-
-.jvectormap-tip a {
-  text-decoration: none;
-  color: #21ACDE;
-}
-
-
-
-
-/*div.info-window {
-  max-width: 250px;
-  position: relative;
-  background: pink;
-}*/
-
-/*div.info-window:before{
-  content: '';
-  background: orange;
-  width: calc(100% + 50px);
-  height: calc(100% + 50px);
-  position: absolute;
-  top: -20px;
-  left: -20px;
-}*/
-
-/*.info-window:hover + .jvectormap-tip {
-  display: block !important;
-}*/
-
-/*.jvectormap-tip {
-  display: block !important;
-}*/
-
-/*.is-hover {
-  display: block !important;
-}*/
