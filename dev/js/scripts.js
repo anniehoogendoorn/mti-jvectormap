@@ -16,6 +16,7 @@ $.fn.hideMap = function() {
   this.addClass('hide-map').removeClass('fade-in');
   return this;
 }
+
 $.fn.hideHeader = function() {
   this.addClass('hide-header').removeClass('fade-in');
   return this;
@@ -49,11 +50,12 @@ $('.map-menu button').click(function() {
     $('#map2-header').showHeader();
     $('#map2').showMap();
   }
-  // else if ($(this).attr('id') == "btn3"){
-  //   $('.maps-container > div:not(#map3-container)').hide();
-  //   $('#map3-container').fadeIn(300);
-  //   $('#map3').vectorMap('get','mapObject').updateSize();
-  // }
+  else if ($(this).attr('id') == "btn3"){
+    $('.map-header:not(#map3-header)').hideHeader();
+    $('.map:not(#map3)').hideMap();
+    $('#map3-header').showHeader();
+    $('#map3').showMap();
+  }
   // else if ($(this).attr('id') == "btn4") {
   //   $('.maps-container > div:not(#map4-container)').hide();
   //   $('#map4-container').fadeIn(300);
@@ -141,7 +143,6 @@ $(function(){
         stroke: scope.markerStrokeColor,
         cursor: 'pointer'
       }
-
     },
     series: {
       regions: [{
