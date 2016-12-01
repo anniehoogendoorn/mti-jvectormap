@@ -32,48 +32,11 @@ $.fn.showHeader = function() {
   return this;
 }
 
-
 // Shows and hides maps on menu tab click
-$('.map-nav button').click(function() {
-  $('button').not(this).removeClass("selected");
-  $(this).addClass('selected');
 
-  if ($(this).attr('id') === 'btn1') {
-    $('.map-header:not(#map1-header)').hideHeader();
-    $('.map:not(#map1)').hideMap();
-    $('#map1-header').showHeader();
-    $('#map1').showMap();
-  }
-  else if ($(this).attr('id') === 'btn2') {
-    $('.map-header:not(#map2-header)').hideHeader();
-    $('.map:not(#map2)').hideMap();
-    $('#map2-header').showHeader();
-    $('#map2').showMap();
-  }
-  else if ($(this).attr('id') == "btn3"){
-    $('.map-header:not(#map3-header)').hideHeader();
-    $('.map:not(#map3)').hideMap();
-    $('#map3-header').showHeader();
-    $('#map3').showMap();
-  }
-  else if ($(this).attr('id') == "btn4") {
-    $('.map-header:not(#map4-header)').hideHeader();
-    $('.map:not(#map4)').hideMap();
-    $('#map4-header').showHeader();
-    $('#map4').showMap();
-  }
-  else {
-    $('.map-header:not(#map5-header)').hideHeader();
-    $('.map:not(#map5)').hideMap();
-    $('#map5-header').showHeader();
-    $('#map5').showMap();
-  }
-});
-
-// New menu version
 $('.map-nav_tab').click(function() {
-  $('.map-nav_tab').not(this).removeClass("selected");
-  $(this).addClass('selected');
+  $('.map-nav_tab').not(this).removeClass('active');
+  $(this).addClass('active');
 
   if ($(this).attr('id') === 'btn1') {
     $('.map-header:not(#map1-header)').hideHeader();
@@ -112,8 +75,8 @@ $('.map-nav_tab').click(function() {
 //Shows and hides maps on menu tab click
 
 // $('.map-nav button').click(function() {
-//   $('button').not(this).removeClass("selected");
-//   $(this).addClass('selected');
+//   $('button').not(this).removeClass("active");
+//   $(this).addClass('active');
 //
 //   if ($(this).attr('id') === 'btn1') {
 //     $('.maps-container > div:not(#map1-container)').hide();
@@ -140,7 +103,6 @@ $('.map-nav_tab').click(function() {
 //     $('#map5').vectorMap('get','mapObject').updateSize();
 //   }
 // });
-
 
 
 

@@ -36,80 +36,26 @@ a {
 
 
 /********************
-  MENU BAR
+  MAP NAV BAR
 *********************/
 
-/*.map-nav {
-  max-width: 912px;
-  margin: 0 auto 20px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-
-button {
-  flex-grow: 1;
-  background: #f0f0f1;
-  padding: 8px 20px;
-  border: 1px solid #ccc;
-  margin-right: -5px;
-  font-size: 15px;
-  cursor: pointer;
-}
-
-
-
-@media (max-width: 768px) {
-  button {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 630px) {
-  button {
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 475px) {
-  .map-nav {
-    flex-wrap: wrap;
-  }
-  button {
-    width: 100%;
-    border-bottom: none;
-  }
-  button:last-of-type {
-    border-bottom: 1px solid #ccc;
-  }
-}
-
-button:focus {
-  outline: none;
-}
-
-button.selected {
-  background: white;
-  padding-top: 10px;
-  border-bottom: none;
-}*/
-
-/*New Version*/
 
 .map-nav {
   margin: 0 auto 20px;
   max-width: 912px;
-
 }
 
-.map-nav ul {
+.map-nav_list {
   display: flex;
   justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 li.map-nav_tab {
   flex-grow: 1;
+  display:inline-block;
   text-align: center;
   background: #f0f0f1;
   padding: 12px 20px;
@@ -119,16 +65,6 @@ li.map-nav_tab {
   cursor: pointer;
 }
 
-li.map-nav_tab {
-  display:inline-block;
-}
-
-.map-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 @media (max-width: 768px) {
   .map-nav_tab {
     font-size: 12px;
@@ -142,14 +78,14 @@ li.map-nav_tab {
 }
 
 @media (max-width: 475px) {
-  .map-nav {
+  .map-nav_list {
     flex-wrap: wrap;
   }
-  .map-nav_tab {
+  li.map-nav_tab {
     width: 100%;
     border-bottom: none;
   }
-  .map-nav_tab:last-of-type {
+  li.map-nav_tab:last-of-type {
     border-bottom: 1px solid #ccc;
   }
 }
@@ -158,12 +94,11 @@ li.map-nav_tab {
   outline: none;
 }
 
-.map-nav_tab.selected {
+.map-nav_tab.active {
   background: white;
   /*padding-top: 10px;*/
   border-bottom: none;
 }
-
 
 
 /**************************
@@ -229,6 +164,7 @@ li.map-nav_tab {
   }
 }
 
+
 /*****************************
   CUSTOMISED JVECTORMAP-TIP CSS
 ******************************/
@@ -255,12 +191,6 @@ li.map-nav_tab {
   CUSTOM TIP INFO WINDOW
 ****************************/
 
-/*image {
-  width: -15px;
-  height: 22px;
-  display: relative;
-  top: -30px;
-}*/
 
 #customTip {
   display: none;
@@ -315,7 +245,6 @@ li.map-nav_tab {
 #customTip span {
   font-weight: 400;
 }
-
 
 
 /************************

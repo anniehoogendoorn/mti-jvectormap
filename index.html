@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>jVectorMap demo</title>
+  <title>MTI Map demo</title>
   <link rel="stylesheet" href="assets/css/jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
   <script src="assets/js/jquery-1.12.3.min.js"></script>
   <script src="assets/js/jquery-jvectormap-2.0.3-min.js"></script>
@@ -20,28 +20,16 @@
 </head>
 <body>
 
-  <!-- <div class="map-nav">
-    <button id="btn1" class="map-nav_tab selected" type="button" name="button">Births Attended</button>
-
-    <button id="btn2" type="button" name="button">Child Mortality</button>
-
-    <button id="btn3" type="button" name="button">Maternal Mortality</button>
-
-    <button id="btn4" type="button" name="button">Medical Doctors</button>
-
-    <button id="btn5" type="button" name="button">Battle Deaths</button>
-  </div> -->
-
   <div class="map-nav">
-    <ul>
-      <li id="btn1" class="map-nav_tab selected">Births Attended</li>
+    <ul class="map-nav_list">
+      <li id="btn1" class="map-nav_tab active">Births Attended</li>
       <li id="btn2" class="map-nav_tab">Child Mortality</li>
       <li id="btn3" class="map-nav_tab">Maternal Mortality</li>
       <li id="btn4" class="map-nav_tab">Medical Doctors</li>
       <li id="btn5" class="map-nav_tab">Battle Deaths</li>
     </ul>
-
   </div>
+
   <div class="maps-container">
 
     <div id="map1-container" class="map-container">
