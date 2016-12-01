@@ -192,7 +192,7 @@ li.map-nav_tab {
 ****************************/
 
 
-#customTip {
+.custom-tip {
   display: none;
   position: absolute;
   padding: 10px 15px 25px;
@@ -201,7 +201,7 @@ li.map-nav_tab {
 }
 
 @media screen and (max-width: 475px) {
-  #customTip {
+  .custom-tip {
     transform: translateX(-45%);
     width: 70%;
     top: 68%;
@@ -210,7 +210,7 @@ li.map-nav_tab {
 }
 
 @media screen and (min-width: 476) and (max-width: 767px) {
-  #customTip {
+  .custom-tip {
     transform: translateX(-45%);
     width: 50%;
     top: 50%;
@@ -219,7 +219,7 @@ li.map-nav_tab {
 }
 
 /*@media screen and (min-width: 769px) {
-  #customTip {
+  .custom-tip {
     transform: translateX(-45%);
     width: 30%;
     top: 50%;
@@ -227,7 +227,7 @@ li.map-nav_tab {
   }
 }*/
 
-#customTip button {
+.custom-tip button {
   float: right;
   color: #bbb;
   font-size: 20px;
@@ -237,12 +237,12 @@ li.map-nav_tab {
   padding-right: 0;
 }
 
-#customTip button:hover {
+.custom-tip button:hover {
   cursor: pointer;
   color: #53564A;
 }
 
-#customTip span {
+.custom-tip span {
   font-weight: 400;
 }
 
