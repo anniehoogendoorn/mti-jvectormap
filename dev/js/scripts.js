@@ -2,14 +2,6 @@
 NAV BAR
 **************************/
 
-// Add click to button 1 on load
-// $(document).ready(function() {
-//   $('.map-nav button#btn1').trigger('click');
-// });
-
-// $('.maps-container:not(.pulse) ').click(function() {
-//   $('#customTip').hide();
-// })
 
 // Methods for showing & hiding maps
 $.fn.hideMap = function() {
@@ -105,7 +97,6 @@ $('.map-nav_tab').click(function() {
 // });
 
 
-
 /*************************
 JVECTORMAPS API
 **************************/
@@ -120,7 +111,6 @@ $(function(){
   scope.strokeWidth = '0.4';
   scope.markerColor = '#21ACDE';
   scope.markerStrokeColor = '#1a8ab2';
-
 
   $('#map3').vectorMap({
     map: 'world_mill_en',
@@ -156,10 +146,7 @@ $(function(){
           title: 'Percentage of Total'
         }
       }]
-      // markers: [{
-      //   attribute: fill,
-      //
-      // }]
+
     },
     onRegionTipShow: function(e, label, index){
       label.html(label.html()+'<br> (Rate: '+birthsData[index]+')');
@@ -183,7 +170,6 @@ $(function(){
         customTip.hide();
       })
 
-         // customTip.html('<h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'">Where we work >></a>')
       customTip.show();
     }
   });// end vectorMap

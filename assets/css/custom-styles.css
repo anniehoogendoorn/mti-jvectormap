@@ -266,7 +266,7 @@ li.map-nav_tab {
 }
 
 .pulse {
-  animation: svg_pulse 5s ease;
+  animation: svg_pulse 2s ease;
   animation-iteration-count: infinite;
 }
 

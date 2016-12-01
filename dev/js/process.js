@@ -35,29 +35,30 @@ function processData(jsonData, result) {
     return result;
   });
 }
+
 // Process data &
 // Print out json data to the console in Firefox (works only in Firefox!) (copy and paste in separate file in data-output)
 
-// processData("dev/data-input/mortality.json", mortalityResult);
-// alert(mortalityResult.toSource());
-// var mortality_json = JSON.stringify(mortalityResult);
-// console.log(mortality_json);
+processData("dev/data-input/mortality.json", mortalityResult);
+alert(mortalityResult.toSource());
+var mortality_json = JSON.stringify(mortalityResult);
+console.log(mortality_json);
 
 
-// processData("dev/data-input/physician.json", physicianResult);
-// alert(physicianResult.toSource());
-// var physician_json = JSON.stringify(physicianResult);
-// console.log(physician_json);
+processData("dev/data-input/physician.json", physicianResult);
+alert(physicianResult.toSource());
+var physician_json = JSON.stringify(physicianResult);
+console.log(physician_json);
 
-// processData("dev/data-input/births.json", birthsResult);
-// alert(birthsResult.toSource());
-// var births_json = JSON.stringify(birthsResult);
-// console.log(births_json);
+processData("dev/data-input/births.json", birthsResult);
+alert(birthsResult.toSource());
+var births_json = JSON.stringify(birthsResult);
+console.log(births_json);
 
-// processData("dev/data-input/maternal-mortality.json", maternalMortalityResult);
-// alert(maternalMortalityResult.toSource());
-// var maternal_json = JSON.stringify(maternalMortalityResult);
-// console.log(maternal_json);
+processData("dev/data-input/maternal-mortality.json", maternalMortalityResult);
+alert(maternalMortalityResult.toSource());
+var maternal_json = JSON.stringify(maternalMortalityResult);
+console.log(maternal_json);
 
 processData("dev/data-input/battle.json", battleResult);
 alert(battleResult.toSource());
