@@ -105,6 +105,166 @@ JVECTORMAPS API
 $(function(){
   var scope = {};
   scope.bgColor = 'transparant';
+  scope.scaleColors = ['#fbf0f1','#cb333b'];
+  scope.fillColor = '#e7e7e9';
+  scope.strokeColor = '#fff';
+  scope.strokeWidth = '0.4';
+  scope.markerColor = '#21ACDE';
+  scope.markerStrokeColor = '#1a8ab2';
+
+  $('#map1').vectorMap({
+    map: 'world_mill_en',
+    backgroundColor: scope.bgColor,
+    zoomOnScroll: false,
+    regionStyle: {
+      initial: {
+        fill: scope.fillColor,
+        stroke: scope.strokeColor,
+        "stroke-width": scope.strokeWidth
+      }
+    },
+    markers: markers,
+    markerStyle: {
+      initial: {
+        fill: scope.markerColor,
+        stroke: scope.markerStrokeColor
+      },
+      hover: {
+        "fill-opacity": 1,
+        stroke: scope.markerStrokeColor,
+        cursor: 'pointer'
+      }
+    },
+    series: {
+      regions: [{
+        values: mortalityData,
+        scale: scope.scaleColors,
+        legend: {
+          horizontal: true,
+          title: 'Per 1000 live births'
+        }
+      }]
+    },
+    onRegionTipShow: function(e, label, index){
+      label.html(label.html()+'<br> (Rate: '+mortalityData[index]+')');
+    },
+    onMarkerTipShow: function(event, tip, index){
+      tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
+      event.preventDefault();
+    },
+    onMarkerClick: function(event, tip, code ) {
+      console.log('You have triggered click');
+      var map = $('#map1').vectorMap('get', 'mapObject');
+      var customTip = $('#customTip');
+
+      customTip.css({
+        left: left,
+        top: top
+      })
+
+      customTip.html(map.tip.html());
+      customTip.prepend("<button>&#215;</button>");
+      customTip.children("button").click(function(){
+        customTip.hide();
+      })
+
+      customTip.show();
+    }
+  });// end vectorMap
+
+  var left,top;
+  $('#map1').vectorMap('get', 'mapObject').container.mousemove(function(e){
+    left = e.pageX - 320;
+    top = e.pageY - 220;
+  });
+
+});// end function
+
+//Map 2
+$(function(){
+  var scope = {};
+  scope.bgColor = 'transparant';
+  scope.scaleColors = ['#fbf0f1','#cb333b'];
+  scope.fillColor = '#e7e7e9';
+  scope.strokeColor = '#fff';
+  scope.strokeWidth = '0.4';
+  scope.markerColor = '#21ACDE';
+  scope.markerStrokeColor = '#1a8ab2';
+
+  $('#map2').vectorMap({
+    map: 'world_mill_en',
+    backgroundColor: scope.bgColor,
+    zoomOnScroll: false,
+    regionStyle: {
+      initial: {
+        fill: scope.fillColor,
+        stroke: scope.strokeColor,
+        "stroke-width": scope.strokeWidth
+      }
+    },
+    markers: markers,
+    markerStyle: {
+      initial: {
+        fill: scope.markerColor,
+        stroke: scope.markerStrokeColor
+      },
+      hover: {
+        "fill-opacity": 1,
+        stroke: scope.markerStrokeColor,
+        cursor: 'pointer'
+      }
+    },
+    series: {
+      regions: [{
+        values: maternalData,
+        scale: scope.scaleColors,
+        legend: {
+          horizontal: true,
+          title: 'Per 100 000 live births'
+        }
+      }]
+    },
+    onRegionTipShow: function(e, label, index){
+      label.html(label.html()+'<br> (Rate: '+maternalData[index]+')');
+    },
+    onMarkerTipShow: function(event, tip, index){
+      tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
+      event.preventDefault();
+    },
+    onMarkerClick: function(event, tip, code ) {
+      console.log('You have triggered click');
+      var map = $('#map2').vectorMap('get', 'mapObject');
+      var customTip = $('#customTip');
+
+      customTip.css({
+        left: left,
+        top: top
+      })
+
+      customTip.html(map.tip.html());
+      customTip.prepend("<button>&#215;</button>");
+      customTip.children("button").click(function(){
+        customTip.hide();
+      })
+
+      customTip.show();
+    }
+  });// end vectorMap
+
+  var left,top;
+  $('#map2').vectorMap('get', 'mapObject').container.mousemove(function(e){
+    left = e.pageX - 320;
+    top = e.pageY - 220;
+  });
+
+});// end function
+
+
+
+// Map 3
+$(function(){
+  var scope = {};
+  scope.bgColor = 'transparant';
   scope.scaleColors = ['#cb333b','#fffdfd'];
   scope.fillColor = '#e7e7e9';
   scope.strokeColor = '#fff';
@@ -186,164 +346,8 @@ $(function(){
 });// end function
 
 
-// Map 2
-$(function(){
-  var scope = {};
-  scope.bgColor = 'transparant';
-  scope.scaleColors = ['#fbf0f1','#cb333b'];
-  scope.fillColor = '#e7e7e9';
-  scope.strokeColor = '#fff';
-  scope.strokeWidth = '0.4';
-  scope.markerColor = '#21ACDE';
-  scope.markerStrokeColor = '#1a8ab2';
-
-  $('#map1').vectorMap({
-    map: 'world_mill_en',
-    backgroundColor: scope.bgColor,
-    zoomOnScroll: false,
-    regionStyle: {
-      initial: {
-        fill: scope.fillColor,
-        stroke: scope.strokeColor,
-        "stroke-width": scope.strokeWidth
-      }
-    },
-    markers: markers,
-    markerStyle: {
-      initial: {
-        fill: scope.markerColor,
-        stroke: scope.markerStrokeColor
-      },
-      hover: {
-        "fill-opacity": 1,
-        stroke: scope.markerStrokeColor,
-        cursor: 'pointer'
-      }
-    },
-    series: {
-      regions: [{
-        values: mortalityData,
-        scale: scope.scaleColors,
-        legend: {
-          horizontal: true,
-          title: 'Per 1000 live births'
-        }
-      }]
-    },
-    onRegionTipShow: function(e, label, index){
-      label.html(label.html()+'<br> (Rate: '+mortalityData[index]+')');
-    },
-    onMarkerTipShow: function(event, tip, index){
-      tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
-      event.preventDefault();
-    },
-    onMarkerClick: function(event, tip, code ) {
-      console.log('You have triggered click');
-      var map = $('#map1').vectorMap('get', 'mapObject');
-      var customTip = $('#customTip');
-
-      customTip.css({
-        left: left,
-        top: top
-      })
-
-      customTip.html(map.tip.html());
-      customTip.prepend("<button>&#215;</button>");
-      customTip.children("button").click(function(){
-        customTip.hide();
-      })
-
-      customTip.show();
-    }
-  });// end vectorMap
-
-  var left,top;
-  $('#map1').vectorMap('get', 'mapObject').container.mousemove(function(e){
-    left = e.pageX - 320;
-    top = e.pageY - 220;
-  });
-
-});// end function
 
 
-//Map 3
-$(function(){
-  var scope = {};
-  scope.bgColor = 'transparant';
-  scope.scaleColors = ['#fbf0f1','#cb333b'];
-  scope.fillColor = '#e7e7e9';
-  scope.strokeColor = '#fff';
-  scope.strokeWidth = '0.4';
-  scope.markerColor = '#21ACDE';
-  scope.markerStrokeColor = '#1a8ab2';
-
-  $('#map2').vectorMap({
-    map: 'world_mill_en',
-    backgroundColor: scope.bgColor,
-    zoomOnScroll: false,
-    regionStyle: {
-      initial: {
-        fill: scope.fillColor,
-        stroke: scope.strokeColor,
-        "stroke-width": scope.strokeWidth
-      }
-    },
-    markers: markers,
-    markerStyle: {
-      initial: {
-        fill: scope.markerColor,
-        stroke: scope.markerStrokeColor
-      },
-      hover: {
-        "fill-opacity": 1,
-        stroke: scope.markerStrokeColor,
-        cursor: 'pointer'
-      }
-    },
-    series: {
-      regions: [{
-        values: maternalData,
-        scale: scope.scaleColors,
-        legend: {
-          horizontal: true,
-          title: 'Per 100 000 live births'
-        }
-      }]
-    },
-    onRegionTipShow: function(e, label, index){
-      label.html(label.html()+'<br> (Rate: '+maternalData[index]+')');
-    },
-    onMarkerTipShow: function(event, tip, index){
-      tip.html('<div class="info-window"><h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'" target="_blank">Where we work <span>&#62;&#62;</span></a></div>');
-      event.preventDefault();
-    },
-    onMarkerClick: function(event, tip, code ) {
-      console.log('You have triggered click');
-      var map = $('#map2').vectorMap('get', 'mapObject');
-      var customTip = $('#customTip');
-
-      customTip.css({
-        left: left,
-        top: top
-      })
-
-      customTip.html(map.tip.html());
-      customTip.prepend("<button>&#215;</button>");
-      customTip.children("button").click(function(){
-        customTip.hide();
-      })
-
-      customTip.show();
-    }
-  });// end vectorMap
-
-  var left,top;
-  $('#map2').vectorMap('get', 'mapObject').container.mousemove(function(e){
-    left = e.pageX - 320;
-    top = e.pageY - 220;
-  });
-
-});// end function
 
 
 // Map 4
