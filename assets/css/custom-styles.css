@@ -36,22 +36,29 @@ a {
 
 
 /********************
-  MENU BAR
+  MAP NAV BAR
 *********************/
 
+
 .map-nav {
-  max-width: 912px;
   margin: 0 auto 20px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  max-width: 912px;
 }
 
+.map-nav_list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-button {
+li.map-nav_tab {
   flex-grow: 1;
+  display:inline-block;
+  text-align: center;
   background: #f0f0f1;
-  padding: 8px 20px;
+  padding: 12px 20px;
   border: 1px solid #ccc;
   margin-right: -5px;
   font-size: 15px;
@@ -59,37 +66,37 @@ button {
 }
 
 @media (max-width: 768px) {
-  button {
+  .map-nav_tab {
     font-size: 12px;
   }
 }
 
 @media (max-width: 630px) {
-  button {
+  .map-nav_tab {
     font-size: 10px;
   }
 }
 
 @media (max-width: 475px) {
-  .map-nav {
+  .map-nav_list {
     flex-wrap: wrap;
   }
-  button {
+  li.map-nav_tab {
     width: 100%;
     border-bottom: none;
   }
-  button:last-of-type {
+  li.map-nav_tab:last-of-type {
     border-bottom: 1px solid #ccc;
   }
 }
 
-button:focus {
+.map-nav_tab:focus {
   outline: none;
 }
 
-button.selected {
+.map-nav_tab.active {
   background: white;
-  padding-top: 10px;
+  /*padding-top: 10px;*/
   border-bottom: none;
 }
 
@@ -157,6 +164,7 @@ button.selected {
   }
 }
 
+
 /*****************************
   CUSTOMISED JVECTORMAP-TIP CSS
 ******************************/
@@ -183,12 +191,6 @@ button.selected {
   CUSTOM TIP INFO WINDOW
 ****************************/
 
-/*image {
-  width: -15px;
-  height: 22px;
-  display: relative;
-  top: -30px;
-}*/
 
 #customTip {
   display: none;
@@ -243,7 +245,6 @@ button.selected {
 #customTip span {
   font-weight: 400;
 }
-
 
 
 /************************
