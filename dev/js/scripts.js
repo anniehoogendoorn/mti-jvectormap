@@ -2,14 +2,6 @@
 NAV BAR
 **************************/
 
-// Add click to button 1 on load
-// $(document).ready(function() {
-//   $('.map-nav button#btn1').trigger('click');
-// });
-
-// $('.maps-container:not(.pulse) ').click(function() {
-//   $('#customTip').hide();
-// })
 
 // Methods for showing & hiding maps
 $.fn.hideMap = function() {
@@ -105,7 +97,6 @@ $('.map-nav_tab').click(function() {
 // });
 
 
-
 /*************************
 JVECTORMAPS API
 **************************/
@@ -121,8 +112,7 @@ $(function(){
   scope.markerColor = '#21ACDE';
   scope.markerStrokeColor = '#1a8ab2';
 
-
-  $('#map1').vectorMap({
+  $('#map3').vectorMap({
     map: 'world_mill_en',
     backgroundColor: scope.bgColor,
     zoomOnScroll: false,
@@ -156,10 +146,7 @@ $(function(){
           title: 'Percentage of Total'
         }
       }]
-      // markers: [{
-      //   attribute: fill,
-      //
-      // }]
+
     },
     onRegionTipShow: function(e, label, index){
       label.html(label.html()+'<br> (Rate: '+birthsData[index]+')');
@@ -169,7 +156,7 @@ $(function(){
       event.preventDefault();
     },
     onMarkerClick: function(event, tip, code ) {
-      var map = $('#map1').vectorMap('get', 'mapObject');
+      var map = $('#map3').vectorMap('get', 'mapObject');
       var customTip = $('#customTip');
 
       customTip.css({
@@ -183,14 +170,13 @@ $(function(){
         customTip.hide();
       })
 
-         // customTip.html('<h3>'+tip.html()+'</h3>'+'<p>'+markers[index].content+'</p>'+'<a href="'+markers[index].link+'">Where we work >></a>')
       customTip.show();
     }
   });// end vectorMap
 
   var left,top;
   if (window.matchMedia("(min-width: 769px)").matches) {
-    $('#map1').vectorMap('get', 'mapObject').container.mousemove(function(e){
+    $('#map3').vectorMap('get', 'mapObject').container.mousemove(function(e){
       left = e.pageX - 320;
       top = e.pageY - 220;
     });
@@ -211,7 +197,7 @@ $(function(){
   scope.markerColor = '#21ACDE';
   scope.markerStrokeColor = '#1a8ab2';
 
-  $('#map2').vectorMap({
+  $('#map1').vectorMap({
     map: 'world_mill_en',
     backgroundColor: scope.bgColor,
     zoomOnScroll: false,
@@ -253,7 +239,7 @@ $(function(){
     },
     onMarkerClick: function(event, tip, code ) {
       console.log('You have triggered click');
-      var map = $('#map2').vectorMap('get', 'mapObject');
+      var map = $('#map1').vectorMap('get', 'mapObject');
       var customTip = $('#customTip');
 
       customTip.css({
@@ -272,7 +258,7 @@ $(function(){
   });// end vectorMap
 
   var left,top;
-  $('#map2').vectorMap('get', 'mapObject').container.mousemove(function(e){
+  $('#map1').vectorMap('get', 'mapObject').container.mousemove(function(e){
     left = e.pageX - 320;
     top = e.pageY - 220;
   });
@@ -291,7 +277,7 @@ $(function(){
   scope.markerColor = '#21ACDE';
   scope.markerStrokeColor = '#1a8ab2';
 
-  $('#map3').vectorMap({
+  $('#map2').vectorMap({
     map: 'world_mill_en',
     backgroundColor: scope.bgColor,
     zoomOnScroll: false,
@@ -333,7 +319,7 @@ $(function(){
     },
     onMarkerClick: function(event, tip, code ) {
       console.log('You have triggered click');
-      var map = $('#map3').vectorMap('get', 'mapObject');
+      var map = $('#map2').vectorMap('get', 'mapObject');
       var customTip = $('#customTip');
 
       customTip.css({
@@ -352,7 +338,7 @@ $(function(){
   });// end vectorMap
 
   var left,top;
-  $('#map3').vectorMap('get', 'mapObject').container.mousemove(function(e){
+  $('#map2').vectorMap('get', 'mapObject').container.mousemove(function(e){
     left = e.pageX - 320;
     top = e.pageY - 220;
   });
