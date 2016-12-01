@@ -1,17 +1,17 @@
 /*************************
-MENU BAR
+NAV BAR
 **************************/
 
 // Add click to button 1 on load
-$(document).ready(function() {
-  $('.map-nav button#btn1').trigger('click');
-});
+// $(document).ready(function() {
+//   $('.map-nav button#btn1').trigger('click');
+// });
 
 // $('.maps-container:not(.pulse) ').click(function() {
 //   $('#customTip').hide();
 // })
 
-// Functions for showing & hiding maps
+// Methods for showing & hiding maps
 $.fn.hideMap = function() {
   this.addClass('hide-map').removeClass('fade-in');
   return this;
