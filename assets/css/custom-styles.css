@@ -39,7 +39,7 @@ a {
   MENU BAR
 *********************/
 
-.map-nav {
+/*.map-nav {
   max-width: 912px;
   margin: 0 auto 20px;
   display: flex;
@@ -93,22 +93,26 @@ button.selected {
   background: white;
   padding-top: 10px;
   border-bottom: none;
-}
+}*/
 
 /*New Version*/
 
 .map-nav {
-  max-width: 912px;
   margin: 0 auto 20px;
+  max-width: 912px;
+
+}
+
+.map-nav ul {
   display: flex;
   justify-content: center;
-  text-align: center;
 }
 
 li.map-nav_tab {
   flex-grow: 1;
+  text-align: center;
   background: #f0f0f1;
-  padding: 8px 20px;
+  padding: 12px 20px;
   border: 1px solid #ccc;
   margin-right: -5px;
   font-size: 15px;
@@ -156,7 +160,7 @@ li.map-nav_tab {
 
 .map-nav_tab.selected {
   background: white;
-  padding-top: 10px;
+  /*padding-top: 10px;*/
   border-bottom: none;
 }
 
