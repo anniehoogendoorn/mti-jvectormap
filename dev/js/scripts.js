@@ -153,7 +153,6 @@ $(function(){
       event.preventDefault();
     },
     onMarkerClick: function(event, tip, code ) {
-      console.log('You have triggered click');
       var map = $('#map1').vectorMap('get', 'mapObject');
       var customTip = $('#customTip');
 
